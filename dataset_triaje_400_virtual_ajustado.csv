@@ -1,0 +1,801 @@
+id,caso,sintomas_texto,nivel_sistema,nivel_referencia,recomendacion_sistema,recomendacion_referencia,adequacy_score,intime,outtime,wait_base_min,alarm,override
+1,caso_1,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.749080237694725,5.36782345071032,17.657909074507188,0,0
+2,caso_2,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9014286128198323,11.316746052897233,13.220312343314092,0,0
+3,caso_3,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.4639878836228102,8.495502118309954,16.610306881334505,0,0
+4,caso_4,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.1973169683940732,10.156061765040523,16.85372037106285,0,0
+5,caso_5,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,0,0.31203728088487304,6.232334887068543,15.393045370419088,0,0
+6,caso_6,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3119890406724053,9.685128411649607,17.891553884997784,0,0  
+7,caso_7,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.11616722433639892,6.451377296741378,19.47493611815212,0,0
+8,caso_8,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7323522915498704,5.79737820043166,19.40454810325421,0,0
+9,caso_9,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2022300234864176,10.634521882002,15.606714971233057,0,0
+10,caso_10,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.416145155592091,5.963865216308893,12.905904366726041,0,0
+11,caso_11,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,2,0.041168988591604894,5.957050814134094,19.878729591698676,0,0
+12,caso_12,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9398197043239886,11.640191506628819,18.711184691567475,0,0
+13,caso_13,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6648852816008435,11.36852816322618,12.997301449626136,0,0
+14,caso_14,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.4246782213565523,7.865305550096268,19.36673506093898,0,1
+15,caso_15,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.36364993441420124,8.154673207432998,18.959170896497028,0,0
+16,caso_16,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.36680901970686763,7.057482151576787,16.150704457008576,0,0
+17,caso_17,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6084844859190754,6.367749116107462,16.730203485959436,0,0
+18,caso_18,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.0495128632644757,7.021500135483971,15.192021630961042,0,0
+19,caso_19,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.8638900372842315,8.899000773746462,12.43809311057625,0,0
+20,caso_20,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.5824582803960838,9.096705457022164,14.681577933167208,0,0
+21,caso_21,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.223705789444759,9.97318005179985,18.42282758878409,0,0
+22,caso_22,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,4,0.27898772130408367,9.016696578071407,12.037056184036823,0,0
+23,caso_23,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.5842892970704363,5.1315259153625785,14.667993373529153,0,0
+24,caso_24,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.7327236865873834,7.699245514802873,15.185349548727547,0,0
+25,caso_25,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9121399684340719,5.257492528533938,16.299164823503382,0,0
+26,caso_26,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.5703519227860272,8.86752521672844,19.358844931302084,0,0
+27,caso_27,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.39934756431671947,7.048530572556982,14.77076795492769,0,1
+28,caso_28,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.0284688768272232,10.354693973377021,14.775625615169822,0,0
+29,caso_29,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.184829137724085,7.2903192130365575,17.900009984877986,0,0
+30,caso_30,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.09290082543999545,4.795302924005631,15.617743527118456,0,0
+31,caso_31,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.2150897038028767,6.073039796119891,13.796838583519856,0,0
+32,caso_32,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.34104824737458306,8.910112037679417,15.619516129061548,0,0
+33,caso_33,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.13010318597055903,7.839411565868125,13.126856163038399,1,0
+34,caso_34,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.8977710745066665,6.5045071312434075,13.411095892049786,0,0
+35,caso_35,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.9312640661491187,6.435904902839104,15.986942181915838,0,0
+36,caso_36,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.6167946962329223,9.822609484987643,15.351403596036384,0,0
+37,caso_37,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6092275383467414,5.045805576531902,19.3187672085448,0,0
+38,caso_38,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.19534422801276774,9.126504583754905,14.899151192933065,0,0
+39,caso_39,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.3684660530243138,9.60591941596329,16.64470680222435,0,0
+40,caso_40,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.8803049874792026,5.368397671330602,17.05811430335624,0,0
+41,caso_41,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.24407646968955765,4.753102754200709,12.104755652706668,0,0
+42,caso_42,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.9903538202225404,10.910191291229594,17.308298976133685,0,0
+43,caso_43,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.06877704223043679,6.314401816767159,13.42428773495801,0,1
+44,caso_44,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.8186408041575641,8.04249368655891,19.68856253975564,0,0
+45,caso_45,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5175599632000338,9.39435736674505,13.189301822024904,0,0 
+46,caso_46,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.325044568707964,11.008536033011117,15.316992989816189,1,0
+47,caso_47,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.6234221521788219,10.539428535116048,12.68279734462915,0,0
+48,caso_48,Presento fiebre leve desde hace algunas horas.,1,1,Derivación presencial,Autocuidado,1,1.0401360423556216,9.56040515390927,19.974994014767578,0,0
+49,caso_49,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.0934205586865593,7.350978071872054,16.01756008264994,0,0
+50,caso_50,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,3,0.3697089110510541,4.870713211243067,16.76308013856035,0,0
+51,caso_51,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9391692555291171,10.602050751093739,12.53661181910742,0,0
+52,caso_52,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.550265646722229,8.90069114513706,17.999683763193424,0,0
+53,caso_53,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.8789978831283782,8.424329938610235,13.679244744764686,0,1
+54,caso_54,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.7896547008552977,11.227781011423714,19.18443431552571,0,0
+55,caso_55,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1957999576221703,5.862984851459078,13.641117123856057,0,0
+56,caso_56,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,0,1.8437484700462337,8.79949909579139,13.525501765309333,0,0
+57,caso_57,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.176985004103839,4.245106872708353,12.29239734278476,0,0
+58,caso_58,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.3919657248382904,7.2039295768030485,15.776535560879994,0,0
+59,caso_59,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.09045457782107613,4.4282742319121,16.51872906610093,0,0
+60,caso_60,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.6506606615265287,5.36356815913496,12.525669115426819,0,0
+61,caso_61,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.777354579378964,5.482512060041594,18.204220933560084,0,0
+62,caso_62,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5426980635477918,8.437959876244173,15.626310677984222,0,0
+63,caso_63,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.6574750183038587,10.133744293896399,16.19512215462064,0,0
+64,caso_64,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,5,0.7135066533871786,8.213719243970136,15.526101975505824,0,0
+65,caso_65,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5618690193747615,10.334904310222012,15.206104487002609,0,0
+66,caso_66,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,0,1.085392166316497,7.334615643458721,16.477122650465745,0,0
+67,caso_67,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.2818484499495253,5.996120967640689,13.2419219674457,0,0
+68,caso_68,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6043939615080793,10.81598873064484,13.455425043962169,0,0
+69,caso_69,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,0.14910128735954165,5.4906763184762575,18.89428496810814,1,0
+70,caso_70,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.9737738732010346,11.753109109844702,19.56892369706906,0,0
+71,caso_71,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.5444895385933148,5.617416386732213,14.986474530238024,1,0
+72,caso_72,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.3974313630683448,10.216704323314179,14.165957385148431,0,0
+73,caso_73,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.011044234247204798,4.2700037059506615,17.151996345912124,0,0
+74,caso_74,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6309228569096683,10.977781539098094,15.269873368784772,0,0
+75,caso_75,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.4137146876952342,8.579921342213034,12.203090845282759,0,0
+76,caso_76,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,5,1.4580143360819746,11.415803112797777,13.249220778929523,0,0
+77,caso_77,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.5425406933718915,5.985320081784285,17.727777830779182,0,0
+78,caso_78,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.14808930346818072,7.471215009876106,17.27139153528121,0,0
+79,caso_79,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.7169314570885452,10.532746670803139,12.216767940027868,0,0
+80,caso_80,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.23173811905025943,7.370325184071152,13.775777295463595,0,0
+81,caso_81,Siento mareos constantes al caminar.,3,2,Autocuidado,Teleconsulta,0,1.726206851751187,9.502598680562762,13.848598372704572,0,0
+82,caso_82,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.2465962536551158,9.421088387562818,17.375141948789828,0,1
+83,caso_83,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,3,0.6617960497052984,7.389042438311938,12.157684302034912,0,0
+84,caso_84,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,0.12711670057204727,7.892465181076428,12.832868655876592,0,0
+85,caso_85,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6219646434313244,8.127850514969925,18.399328682985516,0,0
+86,caso_86,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.6503666440534941,10.057314706999428,13.428357296434669,0,0
+87,caso_87,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.4592123566761281,5.731890638724876,17.221968862814997,0,0
+88,caso_88,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,1.2751149427104262,6.960894080263809,13.905462248373812,0,0
+89,caso_89,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.774425485152653,11.476894389612005,12.795531142074761,0,0
+90,caso_90,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.9444298503238986,10.286012553669396,13.945377527995632,0,0
+91,caso_91,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.2391884918766034,6.973129008590881,17.778135454845273,1,0
+92,caso_92,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.42648957444599,9.14728516125521,18.845571744850286,0,0
+93,caso_93,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5215700972337949,7.185857195120591,18.641758916535935,0,0
+94,caso_94,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1225543951389925,6.251281353481561,15.17746823694764,0,0
+95,caso_95,Tengo una ligera presión en el pecho.,1,3,Derivación presencial,Derivación presencial,4,1.541934359909122,8.324124789549016,17.344681092565168,0,0
+96,caso_96,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9875911927287815,7.107704560885098,13.639874363326568,0,0
+97,caso_97,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.0454656587639881,8.54740232986922,14.345181842088106,0,0
+98,caso_98,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,3,0.8550820367170993,5.321489858507008,19.17068654816896,0,0
+99,caso_99,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.05083825348819038,9.89720709948519,12.104015388085887,0,0
+100,caso_100,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.2157828539866089,10.133047320864225,12.684068246835745,0,0
+101,caso_101,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.0628583713734685,8.25182865549194,13.663090041168218,0,0
+102,caso_102,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2728208225275608,8.489399020592282,12.212257630990557,0,0
+103,caso_103,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6287119621526533,6.48587765987062,13.451483480718379,1,0
+104,caso_104,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.0171413823294055,9.899911500571097,16.664332487757537,0,0
+105,caso_105,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.815132947852186,9.923519983175462,15.371396404739983,1,0
+106,caso_106,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,2,0.4985844582977499,5.4742860943670975,19.1413736886158,0,0
+107,caso_107,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.8207658460712595,10.286328953034314,18.539548493907528,0,0
+108,caso_108,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.5111022770860973,10.44632573462511,14.734538813583008,0,0
+109,caso_109,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.4575963309832449,10.15639581073479,14.07538746745034,0,0
+110,caso_110,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.15395981965758598,8.508276869987746,15.037539265338136,1,0
+111,caso_111,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.579502905827536,8.259994081442274,16.72235954011846,0,0
+112,caso_112,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,5,0.32244257450800884,6.831900792251722,14.14450912658301,0,0
+113,caso_113,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.8593953046851461,11.455766204809224,16.993191262793072,0,0
+114,caso_114,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.616240759128834,10.812624096131284,15.275293217529924,1,0
+115,caso_115,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.266807513020847,5.538119533657984,16.416377446815844,0,0
+116,caso_116,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.7429211803754354,5.901123027358947,15.489012233082533,0,0
+117,caso_117,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,0,1.607344153798229,7.8661243550665265,14.35572607633534,1,0
+118,caso_118,Presento fiebre leve desde hace algunas horas.,2,1,Autocuidado,Autocuidado,4,0.3731401177720717,9.23646010246307,19.587626455697254,0,0
+119,caso_119,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.7851179969799555,11.708774772869623,18.108846353278086,0,0
+120,caso_120,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.0786844838313014,5.98118583045247,13.12090540613162,0,0
+121,caso_121,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.614880310328125,9.179664602440935,18.9477438071833,1,0
+122,caso_122,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.7921825998469865,8.077527739633116,15.89944958599611,0,0
+123,caso_123,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6360069499437278,10.455493336831346,19.156417815152732,0,0
+124,caso_124,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.22010384905535352,9.272817387869607,18.398842047578523,0,0
+125,caso_125,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.45587032508388337,9.485842553350711,15.401708035753867,0,0
+126,caso_126,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8542155772525126,7.666374536022334,12.17975446656094,1,0
+127,caso_127,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.6360295318449862,8.124946545870976,14.149418875079569,0,0
+128,caso_128,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.7214611665126869,7.361903598096924,16.333073717286936,0,0
+129,caso_129,Presento fiebre leve desde hace algunas horas.,2,1,Autocuidado,Autocuidado,3,0.013904261062381407,4.352157240967944,17.067825758609178,0,0
+130,caso_130,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.0214946051551315,10.20982886268545,14.06310148346562,0,0
+131,caso_131,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.834822006297558,9.712228061078022,13.114848592582593,0,0
+132,caso_132,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.4442156209414605,10.442521660658244,18.679441894394394,0,0
+133,caso_133,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.2397307346673656,10.219551757110796,19.875217445628415,0,1
+134,caso_134,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.6752303428072559,8.00782057642302,16.205521458421487,0,0
+135,caso_135,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,2,1.8858194078250383,10.4997438989081,13.373434286786427,0,0
+136,caso_136,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.6464058640415105,10.315000243336078,14.178458612154952,0,0
+137,caso_137,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.0375812434867322,10.1354655875512,12.147125412379733,0,0
+138,caso_138,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.4060379177903557,6.890126528249542,19.31439045248399,0,0
+139,caso_139,Siento mareos constantes al caminar.,1,2,Autocuidado,Teleconsulta,2,0.727259204758588,7.430524016619149,12.942008663121129,0,0
+140,caso_140,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9435641654419213,6.718520656350892,16.61213180411403,0,0
+141,caso_141,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,5,1.9248945898842225,11.649200753436556,14.192441765497648,0,0
+142,caso_142,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5035645916507283,8.140612398356009,16.433424020126346,0,0
+143,caso_143,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.9944970117847709,6.366353844805547,17.211363106814915,0,0
+144,caso_144,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.6017566196335393,8.631960726068678,18.637934429657612,0,0
+145,caso_145,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.5696809887549352,8.27845043150231,13.651370174084825,0,0
+146,caso_146,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.07377389470906559,6.222750202906109,12.087966629267843,0,0
+147,caso_147,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,5,1.2191286679597937,5.900474221157568,13.095085040550458,1,0
+148,caso_148,Tengo una ligera presión en el pecho.,1,3,Derivación presencial,Derivación presencial,3,1.005358046457723,9.03479722001452,19.20014913478484,0,0
+149,caso_149,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.1029575024999787,7.224803707922738,18.991120620500123,0,0
+150,caso_150,Siento mareos constantes al caminar.,3,2,Autocuidado,Teleconsulta,3,0.5572929284732229,9.191203278887057,16.779304817362465,0,0
+151,caso_151,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.8165317719333074,8.937512778605267,16.804134883469228,0,0
+152,caso_152,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.47912378133394484,9.592212783245186,17.320293396370044,0,0
+153,caso_153,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,3,0.2897897441824462,7.601230776829359,13.402970228987597,1,0
+154,caso_154,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.978905520555126,8.344533349767444,19.31529556739968,0,0
+155,caso_155,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.9713009082212014,11.23122252417127,15.350164199136586,0,0
+156,caso_156,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.4841105430230008,6.905007740297383,15.06510822599598,0,0
+157,caso_157,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.344271094811757,6.148362465515602,16.1513416422627,0,0
+158,caso_158,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.5232392306574352,5.695935288537468,12.37572773420044,0,0
+159,caso_159,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.47527508798479934,9.006098622026514,13.330266950048635,0,0
+160,caso_160,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.4564326972237192,9.178290005344508,17.904268931410964,1,0
+161,caso_161,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.7355662654385065,8.960044874033848,12.662389343401012,0,0
+162,caso_162,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.264611661187159,6.542396630240623,16.825216875731105,0,0
+163,caso_163,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2670594215217894,6.085288275042409,13.962792877450568,0,0
+164,caso_164,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.071549368149517,5.1588173621568085,15.114364912335812,0,0
+165,caso_165,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.1805795401088166,6.284104892948399,14.309549894165599,0,1
+166,caso_166,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.670604991178476,9.210111112306274,14.845381731719593,0,0
+167,caso_167,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.6415601299434717,6.995024400541865,17.752367241473962,0,0
+168,caso_168,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.37303702079970846,6.997886552942083,14.376973724985401,1,0
+169,caso_169,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.08155028310952783,9.50650245007202,16.531237122375178,0,0
+170,caso_170,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.1817858863764836,7.271318688516286,15.808403217592797,0,0
+171,caso_171,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.3551287236845648,8.439065658643429,17.309369322901183,1,0
+172,caso_172,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,0,0.033175657855712304,8.735093734302572,19.494637914598066,0,0
+173,caso_173,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.024186116598562,7.403442810526183,17.860576777682002,0,0
+174,caso_174,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.4529915503958759,8.185511751763118,13.719523028726055,0,0
+175,caso_175,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,2,1.2903455808188997,10.46452783329937,12.249465080490278,0,0
+176,caso_176,Tengo una ligera presión en el pecho.,1,3,Autocuidado,Derivación presencial,1,0.3487328580099829,10.045856599955835,14.098112354398602,0,0
+177,caso_177,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.381875476204932,6.26431636177916,16.76062344560204,0,0
+178,caso_178,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.7734706926010748,10.33299644357004,12.411406507874002,1,0
+179,caso_179,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.873459977473469,8.826157735950698,15.970929977609892,0,0
+180,caso_180,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.2750418882919865,5.824508218085737,16.774742791335115,0,0
+181,caso_181,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.682132702100517,7.436947239530085,14.673951126535687,0,0
+182,caso_182,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.22694704248117814,10.10714249419404,18.167297629966576,0,0
+183,caso_183,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.8493872365571256,8.805095800514342,12.852786025070174,0,0
+184,caso_184,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.754678706761962,7.7271883684870115,12.60110225388647,0,0
+185,caso_185,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,2,0.5158832554303112,8.316288381330665,17.825510049628825,0,0
+186,caso_186,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.319968092068358,6.760841804737517,15.963930529649588,0,0
+187,caso_187,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.6344444004024317,6.089624369054415,17.507219171421887,0,0
+188,caso_188,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.1104016231989247,5.883679954662821,15.47861870882997,0,0
+189,caso_189,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.059301156712013,5.827576190458648,13.971216265912854,1,0
+190,caso_190,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.48370458180090337,5.395120742874669,18.5528185413936,1,0
+191,caso_191,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.18620553561179842,5.019168571508259,18.395327031751833,0,0
+192,caso_192,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,2,1.7944315159066535,9.639679984725941,17.557571766835416,0,0
+193,caso_193,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.800836114326661,6.892116620721529,14.1771610978397,0,0
+194,caso_194,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2662029145465359,7.340206614489715,16.721845334952697,0,0
+195,caso_195,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.6780595820974014,10.058790041533472,14.887791175520213,0,0
+196,caso_196,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.6984191492253218,7.542188990802556,12.732656586613073,0,0
+197,caso_197,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.4519113577404787,9.457257788866642,19.338508603697942,0,0
+198,caso_198,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,3,1.7942205199051542,6.828139747114934,13.094549047351691,0,0
+199,caso_199,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7741728485302346,6.927906961382259,19.60189883056642,0,0
+200,caso_200,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5597510917152477,5.804962789314121,15.568046183663647,0,0
+201,caso_201,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2840632923085755,6.297673670741562,13.481063430708957,0,0
+202,caso_202,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.16827992999009767,5.83982196418185,16.335207579026864,0,0
+203,caso_203,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.32325742818922754,5.385320333849709,18.983566687011265,0,1
+204,caso_204,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7971083770541585,6.329323579596492,17.85779909127649,0,1
+205,caso_205,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2128581193191799,5.936673345922785,18.452489182891597,0,0
+206,caso_206,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.018394103233259296,6.783066711429614,17.27026693368574,0,0
+207,caso_207,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.2029430857320642,5.4409453961668195,17.53821251614282,0,0
+208,caso_208,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.3270035382161116,7.5126227045045635,18.793565212522555,0,0
+209,caso_209,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.010123167692437374,7.030626792821579,13.997344070873488,0,0
+210,caso_210,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.3216161028349973,8.46398507461119,15.915399709145124,0,0
+211,caso_211,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,3,1.0974675787331722,5.333340417779766,13.769675534556818,0,1
+212,caso_212,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.3837903953853865,10.180252788839642,19.901344063973177,0,0
+213,caso_213,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.303922519005201,9.071324855950648,19.552474717492906,0,0
+214,caso_214,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,3,0.44853861892111957,4.939092810614351,12.315414490948047,0,0
+215,caso_215,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4243584426950717,10.665830187335734,17.644601380125508,0,0
+216,caso_216,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.47449817499360014,9.99973257818448,19.40198653932533,0,0
+217,caso_217,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.6507993963185355,5.017267155447718,13.444602761018668,0,0
+218,caso_218,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.4929828102360483,7.154248699119271,16.543561844421035,0,0
+219,caso_219,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.2992657980944293,10.136473476852798,19.323906380704337,0,0
+220,caso_220,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.6984468209883559,10.188004963290306,12.27156782868639,1,0
+221,caso_221,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.3152257846006867,6.422351900738951,17.57936213797472,0,0
+222,caso_222,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1366172066709432,6.3927131466912055,14.378792058980405,0,0
+223,caso_223,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.18734953565618495,6.410182152404477,19.395169563012242,0,0
+224,caso_224,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.735431606118867,7.642569517264995,19.768465961322942,0,0
+225,caso_225,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5304047353634509,8.239933364545227,19.554131912907472,0,0
+226,caso_226,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.48797928675816715,6.701461124176802,15.793713733259711,0,0
+227,caso_227,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9460211095048912,8.721229406303777,18.896341207914507,0,0
+228,caso_228,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7861954493335208,9.27102107813606,18.756395188280564,0,0
+229,caso_229,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,3,1.7840931103542266,6.004192327697814,14.552803785946045,0,1
+230,caso_230,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2622772519945258,6.7768989180586505,18.631323793205418,0,0
+231,caso_231,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.5896226070832968,9.86972012239061,12.296061077723941,0,0
+232,caso_232,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.0052741862103842,10.37651521233358,16.770159027856423,0,1
+233,caso_233,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.1538077692527182,8.223872421946716,13.840070698301624,1,0
+234,caso_234,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9850353876377278,8.17771629922962,12.96453508621823,0,0
+235,caso_235,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.390485975596089,5.0335180436347455,12.615625613033673,0,0
+236,caso_236,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4449042305230106,8.129378431463739,17.570310207025116,0,0
+237,caso_237,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5615447248817116,7.757248323611851,14.71899971014453,1,0
+238,caso_238,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.04863193286290768,5.503454954671286,17.798134172230093,0,0
+239,caso_239,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2909445918143356,6.906403977510622,12.522850726391539,0,0
+240,caso_240,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3542213588140979,6.617926337441833,14.522322702644882,0,0
+241,caso_241,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.8809171687058286,6.001344355372186,16.315930339002698,0,0
+242,caso_242,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.9078571540051747,7.8403321475042445,18.32578531871171,1,0
+243,caso_243,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.829728780440897,7.098416822420165,14.55002002345656,0,0
+244,caso_244,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.7403174005108888,6.705301513578377,17.00713101149607,0,0
+245,caso_245,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.030913233057734857,4.749486023973242,19.087821985889498,0,0
+246,caso_246,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,3,1.8566371251754508,11.199800809614821,16.926905505458436,0,0
+247,caso_247,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8563682966346287,8.41792301795892,13.863675798029071,0,0
+248,caso_248,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9333096380873391,10.007923552954276,12.195206252452305,0,0
+249,caso_249,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9272399541785057,10.662267385822535,18.96079099120744,0,0
+250,caso_250,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7060189109347201,8.696672104509064,12.170155286803098,0,0
+251,caso_251,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.5888977841391714,5.1104195126637135,18.997613381473595,1,0
+252,caso_252,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7701954572038505,7.9928347081151365,16.231497072217696,0,0
+253,caso_253,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7022733430337138,9.22332005115899,19.51254158810317,0,0
+254,caso_254,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6338440103125553,9.106480855418535,18.390265886189322,0,0
+255,caso_255,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.338985493372185,6.928942770750261,19.9834728842667,1,0
+256,caso_256,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.1136025249167003,5.879084341690083,14.805694523613681,0,0
+257,caso_257,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.872309548321562,7.574964983113909,18.137506311449016,0,0
+258,caso_258,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,2,1.392059593349946,7.570553371741757,15.215447308873937,0,0
+259,caso_259,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.14012234017873,9.015625788168338,15.839004962431272,0,0
+260,caso_260,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.19435298754153707,7.619022815555008,17.02004370574696,0,0
+261,caso_261,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2300144533983395,7.3665948087854165,18.98941691349071,0,0
+262,caso_262,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.9801077002085266,11.899199192966405,19.87266775359436,0,0
+263,caso_263,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.28016803047304806,7.914816946614371,18.146187310916147,0,0
+264,caso_264,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,3,1.0366593047274735,6.46002005514344,15.342134257338671,0,0
+265,caso_265,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7547461438559109,6.3654409795783335,15.37085601821656,0,0
+266,caso_266,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.4815372355084089,6.398692070614401,17.90065841271113,0,0
+267,caso_267,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.394031481990536,6.8697778522975845,13.910217166146419,0,0
+268,caso_268,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.4049681679742185,6.369056407531553,12.883792905051157,1,0
+269,caso_269,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,5,0.7189823024395103,5.8383844467473445,14.836977261126211,1,0
+270,caso_270,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,5,0.5871836885289867,6.297754700692069,14.297911933232655,0,0
+271,caso_271,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.6187223109570272,6.658963882725557,14.37046496364792,0,0
+272,caso_272,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.6202267893583615,11.000819337116912,13.86886200839928,0,0
+273,caso_273,Presento fiebre leve desde hace algunas horas.,2,1,Autocuidado,Autocuidado,4,1.7341446371602074,6.215547111130061,12.336745517090895,0,0
+274,caso_274,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.8264811051129426,8.97354944253447,12.14299147786731,0,0
+275,caso_275,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.0226847977218756,7.485065759659845,19.901779117888253,0,0
+276,caso_276,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.0030325893743992,10.897304290826037,15.422185069886899,0,0
+277,caso_277,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.5965903579335503,6.268823770941864,15.074613177277453,0,0
+278,caso_278,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,0,1.2999278615555303,7.68706145582998,17.43717826154456,1,0
+279,caso_279,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4039337545154067,11.22075635416762,13.746031102920513,1,0
+280,caso_280,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.591585338872202,10.784628094236083,19.599689471601803,0,0
+281,caso_281,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7800106836351326,10.682443109330812,18.290760115324417,0,0
+282,caso_282,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6759903137030716,6.223407275972711,12.715288018498075,0,0
+283,caso_283,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,2,0.751165905279888,5.7764914296202825,15.340646206279427,0,1
+284,caso_284,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.187963879681738,8.199823199228323,19.032946460497318,0,0
+285,caso_285,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.156560281992348,10.732816216757863,19.55785617833128,0,0
+286,caso_286,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.07188454759348417,7.412461905677063,15.739212089998958,0,0
+287,caso_287,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.9311960362649203,8.360872173084319,16.907291113685663,0,0
+288,caso_288,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,1,1.0852892694151532,6.765163831376858,13.336271568736603,0,0
+289,caso_289,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.5730825042565688,9.19004010340819,19.929349009095812,0,0
+290,caso_290,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,5,1.1816665211380215,6.303929012483161,13.853373611067546,0,0
+291,caso_291,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.06100049987809886,6.003075918303561,19.541854193081004,0,0
+292,caso_292,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.07469637749842883,6.627315009196929,17.197173191938948,1,0
+293,caso_293,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.6452011213193165,8.690863393426046,16.861894359030874,0,0
+294,caso_294,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.7203812828225258,6.174839677313008,16.101508088132068,0,0
+295,caso_295,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.25412102530376957,4.943141973738991,13.845358493742069,0,0
+296,caso_296,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.0444865201096087,8.708206774759404,13.412224256044066,0,0
+297,caso_297,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.5399871061972217,7.271770425638756,13.763889672561403,0,0
+298,caso_298,Presento fiebre leve desde hace algunas horas.,3,1,Teleconsulta,Autocuidado,2,0.43164205499368635,7.91907138352936,13.491506097154037,0,0
+299,caso_299,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.2457809516380005,6.171957243283214,18.236675788534026,0,0
+300,caso_300,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.170694929987536,7.057535541116441,14.80100207333384,0,0
+301,caso_301,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.1033634423372154,7.298900037646731,12.462741412507171,0,0
+302,caso_302,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.062709263136296,5.373650484070857,19.75282104112649,0,0
+303,caso_303,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.081270243220213,7.100895912383736,19.070287079707406,0,0
+304,caso_304,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.274859802996413,6.081347864630258,19.422018265561704,0,0
+305,caso_305,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.452182667445323,5.83243249028193,19.959262581171483,0,0
+306,caso_306,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.9517041589250692,11.89146555326474,13.391161993755897,0,0
+307,caso_307,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.0326006966023906,6.966723766450729,15.16993615122127,0,0
+308,caso_308,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6459129458824919,9.505159621010302,18.06590780563273,0,0
+309,caso_309,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.5903723895374073,7.11821631811999,17.568164944430336,0,0
+310,caso_310,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.5416645025241484,8.630680835867725,13.23116725071884,0,0
+311,caso_311,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.8779428414112722,9.43931000074939,18.526664999924943,0,0
+312,caso_312,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.15691276268453191,7.730745206331597,13.795524574693285,0,0
+313,caso_313,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.05070148683091502,6.8801586181318655,13.790540918580984,0,0
+314,caso_314,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.9252968293558501,8.396342314239462,16.295795383147308,0,0
+315,caso_315,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,1,1.6719602410244117,7.765169840282383,16.743519478733624,0,0
+316,caso_316,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.391948412187396,10.969123277674353,16.64068966270249,0,0
+317,caso_317,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8179058888285398,9.801622335554914,12.731894699182039,0,0
+318,caso_318,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.34658864014169155,10.136750104140766,19.019686901043045,0,0
+319,caso_319,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.3128740853421721,5.058657426255441,14.124800340709648,0,0
+320,caso_320,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.5004857963291907,8.885690647551055,13.036119370262433,0,0
+321,caso_321,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.098453329412241,10.728496070338467,19.10998463895182,0,0
+322,caso_322,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.4291918454001247,6.516590242394085,19.645211985838028,1,0
+323,caso_323,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,3,1.3203947534354625,5.719372357636128,18.897020938123603,0,0
+324,caso_324,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5598677938918857,9.006591689632241,18.476128597799025,0,0
+325,caso_325,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9097305613263882,9.35656924040586,17.241935845112174,0,0
+326,caso_326,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,0,1.475793833391537,10.52676649394117,16.406858964873116,0,0
+327,caso_327,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,2,1.1087081050228014,5.947342364780538,12.695894079291282,0,0
+328,caso_328,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2234414924687045,9.995045363628046,15.267625704565589,0,0
+329,caso_329,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.8392001248555798,6.048964045142047,14.981508136098512,0,0
+330,caso_330,Presento fiebre leve desde hace algunas horas.,1,1,Derivación presencial,Autocuidado,3,0.4954619790023149,5.477397636196542,14.07803027008261,0,0
+331,caso_331,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.7119453573025232,5.697540144888482,17.787360909508678,0,0
+332,caso_332,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.5156922209287382,10.403140542317031,15.967005880630166,0,1
+333,caso_333,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,0,0.028786977259511737,8.019970301436713,12.648369727261183,0,0
+334,caso_334,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.23214528101383247,7.370537829628549,13.76146561559849,0,0
+335,caso_335,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.0920052840435055,6.244988188784521,17.466070109276767,0,0
+336,caso_336,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.08145760463794027,9.34466084951659,12.609046875922402,0,0
+337,caso_337,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7109211680220144,8.065591812557827,18.80965531239015,0,0
+338,caso_338,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.4073157187600474,10.30691235558951,15.961172216111795,0,0
+339,caso_339,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.9483476581746504,7.583157109595961,15.844692618613184,0,0
+340,caso_340,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.19566832130200296,6.457334897851449,16.73926227727614,0,0
+341,caso_341,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,2,0.9832317502336647,7.759310464251303,18.597447727401192,0,0
+342,caso_342,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,3,0.9469435415611314,6.755210786545984,14.782473663217544,0,0
+343,caso_343,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.34640373982003037,8.832060020877536,17.42412922047251,1,0
+344,caso_344,Presento fiebre leve desde hace algunas horas.,2,1,Autocuidado,Autocuidado,3,0.8677032984759461,7.8840256390308205,16.52585571196633,0,0
+345,caso_345,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.7970094687947469,6.190285639675651,14.13622616135537,0,0
+346,caso_346,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,3,1.231700196104433,10.629147635751844,19.029039890841265,0,0
+347,caso_347,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.2701873017352876,7.573534629974556,18.379408172855424,1,0
+348,caso_348,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.09060801954408904,7.351925186228021,17.267614677267403,0,0
+349,caso_349,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.7492252292529424,10.188057895040224,18.804653832753935,1,0
+350,caso_350,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2517198314284728,8.997147806912425,18.93835360767842,0,0
+351,caso_351,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.0062725171601754,5.707660761410359,17.66690381372028,0,0
+352,caso_352,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,1.7129796823766446,11.351972424057497,18.696106626909376,0,0
+353,caso_353,Tengo una ligera presión en el pecho.,1,3,Derivación presencial,Derivación presencial,4,1.31738726323789,9.083635581666398,17.579771693354267,0,0
+354,caso_354,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.3258688541628594,6.335302542105376,17.441126174082402,0,0
+355,caso_355,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.1411374948008597,4.976769930781183,16.948891025721473,0,0
+356,caso_356,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2848385564126312,10.048989692034407,18.021733116461128,0,0
+357,caso_357,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.053022621083243626,7.773459156654325,13.26884084234459,0,0
+358,caso_358,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.1715511625469266,8.372317714404856,19.046966073591427,0,0
+359,caso_359,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.8804604828499152,11.243815981155661,18.974748221961857,0,0
+360,caso_360,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.150948355751758,9.882531623098943,12.233978264276473,0,0
+361,caso_361,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.7763398524130438,5.68638913080955,18.606534004518103,0,0
+362,caso_362,Presento fiebre leve desde hace algunas horas.,2,1,Teleconsulta,Autocuidado,0,1.2865764368847064,7.1569088436579955,13.030958939787562,0,0
+363,caso_363,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9165057809830333,6.407440619869828,14.680950834073135,0,0
+364,caso_364,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,5,1.0912335786318699,9.554911334067933,17.948066050332862,0,0
+365,caso_365,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.8829296175530503,6.084124225967726,13.286079168386465,0,0
+366,caso_366,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.7722052756015485,8.191543384829448,18.543736192952498,0,0
+367,caso_367,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9223811276478284,10.497133242091971,18.657073423661934,0,0
+368,caso_368,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,5,1.8107012839121275,11.071295104482624,16.05974187008669,0,0
+369,caso_369,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3915822695785929,6.444072761874038,12.05108697373467,0,0
+370,caso_370,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.1387226017503309,9.066266429782408,14.296305065399302,0,0
+371,caso_371,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.2015560027548533,4.865346424486097,16.935415347005936,0,1
+372,caso_372,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,3,0.036443651303099456,9.115157401710208,19.84948942421939,0,0
+373,caso_373,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,3,0.1888859215118568,4.953817895503751,17.054508216133346,0,0
+374,caso_374,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,2,1.3660135468327137,7.7497372901949175,14.078428648513277,0,0
+375,caso_375,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.14237729692045797,8.92614949159778,17.072045624796893,0,0
+376,caso_376,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.6379512605875226,5.5374558246801655,16.319883037726843,0,0
+377,caso_377,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.6897506219389091,7.0652589933347585,18.23876316120915,0,0
+378,caso_378,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.04654387147165173,8.38005928183005,12.855845110615668,0,0
+379,caso_379,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.6289369651778716,9.949156184454317,18.088223220016225,0,0
+380,caso_380,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5637095495467999,8.410595346858583,16.330132629408883,0,0
+381,caso_381,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.2363296552433125,8.400020322045911,19.703936030871958,0,0
+382,caso_382,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.3934743307283013,8.649820990813879,14.734977328309489,0,0
+383,caso_383,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.257885693559768,6.768680047001484,17.060975145071584,0,0
+384,caso_384,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.754944027054106,7.829119988077623,19.45622484408014,0,0
+385,caso_385,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.4701420876077715,6.5597283884163256,12.820077823925434,0,0
+386,caso_386,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.6069618607696972,11.057665228771468,19.49782789789161,0,0
+387,caso_387,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.564069145142613,8.064419913739336,17.503085778406508,0,0
+388,caso_388,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.35487908755944564,6.759987588141285,12.542696472841374,0,0
+389,caso_389,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.5012295032817167,8.273264325146513,14.40770853557453,0,0
+390,caso_390,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,3,1.613669478534528,11.29736951620542,17.665376709162253,0,0
+391,caso_391,Siento mareos constantes al caminar.,3,2,Derivación presencial,Teleconsulta,1,1.9810102840013466,6.901118702697827,12.538804811750174,0,0
+392,caso_392,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,0,0.825235353822853,8.342614345923636,16.657363681410185,0,0
+393,caso_393,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,3,0.7440361715855663,7.779368244892362,14.767064455623654,0,0
+394,caso_394,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.5528259214839937,9.221551334091881,16.967324142139816,0,0
+395,caso_395,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.6816070805060357,4.790268183431079,12.365936270500104,0,0
+396,caso_396,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.8615146512071294,11.094258104872038,18.97229444921901,1,0
+397,caso_397,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7168255036860236,11.3095351985877,19.787911753419174,0,1
+398,caso_398,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.8579880547500367,8.24878715628529,19.751022842285533,0,0
+399,caso_399,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5017421355829947,9.68164707884435,17.9972146539434,0,0
+400,caso_400,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5090857481693647,11.044082035233139,13.040689921045056,0,0
+401,caso_1,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.749080237694725,5.36782345071032,17.657909074507188,0,0
+402,caso_2,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9014286128198323,11.316746052897233,13.220312343314092,0,0
+403,caso_3,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.4639878836228102,8.495502118309954,16.610306881334505,0,0
+404,caso_4,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.1973169683940732,1.156061765040523,16.85372037106285,0,0
+405,caso_5,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,0,0.31203728088487304,1.232334887068543,15.393045370419088,0,0
+4066,caso_6,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3119890406724053,1.685128411649607,17.891553884997784,0,0  
+407,caso_7,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.11616722433639892,3.451377296741378,19.47493611815212,0,0
+408,caso_8,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7323522915498704,2.79737820043166,19.40454810325421,0,0
+409,caso_9,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2022300234864176,2.634521882002,15.606714971233057,0,0
+410,caso_10,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.416145155592091,2.963865216308893,12.905904366726041,0,0
+411,caso_11,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,2,0.041168988591604894,3.957050814134094,19.878729591698676,0,0
+412,caso_12,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9398197043239886,1.640191506628819,18.711184691567475,0,0
+413,caso_13,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6648852816008435,1.36852816322618,12.997301449626136,0,0
+414,caso_14,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.4246782213565523,3.865305550096268,19.36673506093898,0,1
+415,caso_15,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.36364993441420124,3.154673207432998,18.959170896497028,0,0
+416,caso_16,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.36680901970686763,2.057482151576787,16.150704457008576,0,0
+417,caso_17,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6084844859190754,2.367749116107462,16.730203485959436,0,0
+418,caso_18,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.0495128632644757,3.021500135483971,15.192021630961042,0,0
+419,caso_19,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.8638900372842315,1.899000773746462,12.43809311057625,0,0
+420,caso_20,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.5824582803960838,2.096705457022164,14.681577933167208,0,0
+221,caso_221,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.3152257846006867,6.422351900738951,17.57936213797472,0,0
+222,caso_222,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1366172066709432,6.3927131466912055,14.378792058980405,0,0
+223,caso_223,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.18734953565618495,6.410182152404477,19.395169563012242,0,0
+224,caso_224,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.735431606118867,7.642569517264995,19.768465961322942,0,0
+225,caso_225,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5304047353634509,8.239933364545227,19.554131912907472,0,0
+226,caso_226,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.48797928675816715,6.701461124176802,15.793713733259711,0,0
+227,caso_227,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9460211095048912,8.721229406303777,18.896341207914507,0,0
+228,caso_228,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7861954493335208,9.27102107813606,18.756395188280564,0,0
+229,caso_229,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,3,1.7840931103542266,6.004192327697814,14.552803785946045,0,0
+230,caso_230,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2622772519945258,6.7768989180586505,18.631323793205418,0,0
+231,caso_231,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.5896226070832968,9.86972012239061,12.296061077723941,0,0
+232,caso_232,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.0052741862103842,10.37651521233358,16.770159027856423,0,0
+233,caso_233,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.1538077692527182,8.223872421946716,13.840070698301624,0,0
+234,caso_234,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9850353876377278,8.17771629922962,12.96453508621823,0,0
+235,caso_235,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.390485975596089,5.0335180436347455,12.615625613033673,0,0
+236,caso_236,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4449042305230106,8.129378431463739,17.570310207025116,0,0
+237,caso_237,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5615447248817116,7.757248323611851,14.71899971014453,0,0
+238,caso_238,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.04863193286290768,5.503454954671286,17.798134172230093,0,0
+239,caso_239,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2909445918143356,6.906403977510622,12.522850726391539,0,0
+240,caso_240,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3542213588140979,6.617926337441833,14.522322702644882,0,0
+241,caso_241,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.8809171687058286,6.001344355372186,16.315930339002698,0,0
+242,caso_242,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.9078571540051747,7.8403321475042445,18.32578531871171,0,0
+243,caso_243,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.829728780440897,7.098416822420165,14.55002002345656,0,0
+244,caso_244,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.7403174005108888,6.705301513578377,17.00713101149607,0,0
+245,caso_245,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.030913233057734857,4.749486023973242,19.087821985889498,0,0
+246,caso_246,Tengo una ligera presión en el pecho.,2,2,Derivación presencial,Derivación presencial,3,1.8566371251754508,11.199800809614821,16.926905505458436,0,0
+247,caso_247,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8563682966346287,1.41792301795892,13.863675798029071,0,0
+248,caso_248,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9333096380873391,2.007923552954276,12.195206252452305,0,0
+249,caso_249,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9272399541785057,2.662267385822535,18.96079099120744,0,0
+250,caso_250,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7060189109347201,1.696672104509064,12.170155286803098,0,0
+251,caso_251,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.5888977841391714,1.1104195126637135,18.997613381473595,0,0
+252,caso_252,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7701954572038505,1.9928347081151365,16.231497072217696,0,0
+253,caso_253,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7022733430337138,1.22332005115899,19.51254158810317,0,0
+254,caso_254,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6338440103125553,2.106480855418535,18.390265886189322,0,0
+255,caso_255,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.338985493372185,3.928942770750261,19.9834728842667,0,0
+256,caso_256,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.1136025249167003,1.879084341690083,14.805694523613681,0,0
+257,caso_257,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.872309548321562,2.574964983113909,18.137506311449016,0,0
+258,caso_258,Siento mareos constantes al caminar.,2,2,Autocuidado,Autocuidado,2,1.392059593349946,2.570553371741757,15.215447308873937,0,0
+259,caso_259,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.14012234017873,3.015625788168338,15.839004962431272,0,0
+260,caso_260,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.19435298754153707,2.619022815555008,17.02004370574696,0,0
+261,caso_261,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.2300144533983395,3.3665948087854165,18.98941691349071,0,0
+262,caso_262,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.9801077002085266,2.899199192966405,19.87266775359436,0,0
+63,caso_63,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.6574750183038587,10.133744293896399,16.19512215462064,0,0
+64,caso_64,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,5,0.7135066533871786,8.213719243970136,15.526101975505824,0,0
+65,caso_65,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5618690193747615,10.334904310222012,15.206104487002609,0,0
+66,caso_66,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,0,1.085392166316497,7.334615643458721,16.477122650465745,0,1
+67,caso_67,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.2818484499495253,5.996120967640689,13.2419219674457,0,0
+68,caso_68,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6043939615080793,10.81598873064484,13.455425043962169,1,0
+69,caso_69,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,0.14910128735954165,5.4906763184762575,18.89428496810814,1,0
+70,caso_70,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.9737738732010346,11.753109109844702,19.56892369706906,0,0
+71,caso_71,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.5444895385933148,5.617416386732213,14.986474530238024,1,0
+72,caso_72,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.3974313630683448,10.216704323314179,14.165957385148431,0,0
+73,caso_73,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.011044234247204798,4.2700037059506615,17.151996345912124,0,0
+74,caso_74,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6309228569096683,10.977781539098094,15.269873368784772,0,0
+75,caso_75,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.4137146876952342,8.579921342213034,12.203090845282759,0,0
+76,caso_76,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,5,1.4580143360819746,11.415803112797777,13.249220778929523,0,0
+77,caso_77,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.5425406933718915,5.985320081784285,17.727777830779182,0,0
+78,caso_78,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.14808930346818072,7.471215009876106,17.27139153528121,0,0
+79,caso_79,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.7169314570885452,10.532746670803139,12.216767940027868,0,0
+80,caso_80,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.23173811905025943,7.370325184071152,13.775777295463595,0,0
+81,caso_81,Siento mareos constantes al caminar.,3,2,Autocuidado,Teleconsulta,0,1.726206851751187,9.502598680562762,13.848598372704572,0,0
+82,caso_82,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.2465962536551158,9.421088387562818,17.375141948789828,0,1
+83,caso_83,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,3,0.6617960497052984,7.389042438311938,12.157684302034912,0,0
+84,caso_84,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,0.12711670057204727,7.892465181076428,12.832868655876592,1,0
+85,caso_85,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6219646434313244,8.127850514969925,18.399328682985516,0,0
+86,caso_86,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.6503666440534941,10.057314706999428,13.428357296434669,0,0
+87,caso_87,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.4592123566761281,5.731890638724876,17.221968862814997,0,0
+88,caso_88,Siento mareos constantes al caminar.,1,2,Teleconsulta,Teleconsulta,5,1.2751149427104262,6.960894080263809,13.905462248373812,0,1
+89,caso_89,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.774425485152653,11.476894389612005,12.795531142074761,0,0
+90,caso_90,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.9444298503238986,10.286012553669396,13.945377527995632,0,0
+91,caso_91,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.2391884918766034,6.973129008590881,17.778135454845273,1,0
+92,caso_92,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.42648957444599,9.14728516125521,18.845571744850286,0,0
+93,caso_93,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5215700972337949,7.185857195120591,18.641758916535935,0,0
+94,caso_94,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1225543951389925,6.251281353481561,15.17746823694764,0,0
+95,caso_95,Tengo una ligera presión en el pecho.,1,3,Derivación presencial,Derivación presencial,4,1.541934359909122,8.324124789549016,17.344681092565168,0,0
+96,caso_96,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9875911927287815,7.107704560885098,13.639874363326568,0,0
+97,caso_97,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.0454656587639881,8.54740232986922,14.345181842088106,0,0
+98,caso_98,Presento fiebre leve desde hace algunas horas.,3,1,Autocuidado,Autocuidado,3,0.8550820367170993,5.321489858507008,19.17068654816896,0,0
+99,caso_99,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.05083825348819038,9.89720709948519,12.104015388085887,0,0
+100,caso_100,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.2157828539866089,10.133047320864225,12.684068246835745,0,0
+101,caso_101,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.0628583713734685,8.25182865549194,13.663090041168218,0,0
+102,caso_102,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2728208225275608,8.489399020592282,12.212257630990557,0,0
+103,caso_103,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6287119621526533,6.48587765987062,13.451483480718379,1,0
+104,caso_104,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.0171413823294055,9.899911500571097,16.664332487757537,0,0
+105,caso_105,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.815132947852186,9.923519983175462,15.371396404739983,1,0
+106,caso_106,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,2,0.4985844582977499,5.4742860943670975,19.1413736886158,1,0
+107,caso_107,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.8207658460712595,10.286328953034314,18.539548493907528,0,0
+108,caso_108,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.5111022770860973,10.44632573462511,14.734538813583008,0,0
+109,caso_109,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.4575963309832449,10.15639581073479,14.07538746745034,0,0
+110,caso_110,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.15395981965758598,8.508276869987746,15.037539265338136,1,0
+111,caso_111,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.579502905827536,8.259994081442274,16.72235954011846,0,0
+112,caso_112,Tengo una ligera presión en el pecho.,2,3,Derivación presencial,Derivación presencial,5,0.32244257450800884,6.831900792251722,14.14450912658301,0,0
+113,caso_113,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.8593953046851461,11.455766204809224,16.993191262793072,0,0
+114,caso_114,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.616240759128834,10.812624096131284,15.275293217529924,1,0
+115,caso_115,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.266807513020847,5.538119533657984,16.416377446815844,0,0
+116,caso_116,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.7429211803754354,5.901123027358947,15.489012233082533,0,0
+117,caso_117,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,0,1.607344153798229,7.8661243550665265,14.35572607633534,1,1
+118,caso_118,Presento fiebre leve desde hace algunas horas.,2,1,Autocuidado,Autocuidado,4,0.3731401177720717,9.23646010246307,19.587626455697254,0,0
+119,caso_119,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.7851179969799555,11.708774772869623,18.108846353278086,0,0
+120,caso_120,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.0786844838313014,5.98118583045247,13.12090540613162,0,0
+121,caso_121,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.614880310328125,9.179664602440935,18.9477438071833,1,0
+122,caso_122,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.7921825998469865,8.077527739633116,15.89944958599611,0,0
+123,caso_123,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6360069499437278,10.455493336831346,19.156417815152732,0,0
+124,caso_124,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.22010384905535352,9.272817387869607,18.398842047578523,0,0
+125,caso_125,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.45587032508388337,9.485842553350711,15.401708035753867,0,1
+126,caso_126,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8542155772525126,7.666374536022334,12.17975446656094,0,0
+127,caso_127,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.6360295318449862,8.124946545870976,14.149418875079569,0,0
+128,caso_128,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.7214611665126869,7.361903598096924,16.333073717286936,0,0
+129,caso_129,Presento fiebre leve desde hace algunas horas.,2,1,Autocuidado,Autocuidado,3,0.013904261062381407,4.352157240967944,17.067825758609178,0,0
+130,caso_130,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.0214946051551315,10.20982886268545,14.06310148346562,1,0
+131,caso_131,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.834822006297558,9.712228061078022,13.114848592582593,0,0
+132,caso_132,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.4442156209414605,10.442521660658244,18.679441894394394,0,0
+133,caso_133,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.2397307346673656,10.219551757110796,19.875217445628415,0,1
+134,caso_134,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.6752303428072559,8.00782057642302,16.205521458421487,1,0
+135,caso_135,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,2,1.8858194078250383,10.4997438989081,13.373434286786427,0,0
+136,caso_136,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.6464058640415105,10.315000243336078,14.178458612154952,0,0
+137,caso_137,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.0375812434867322,10.1354655875512,12.147125412379733,0,0
+138,caso_138,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.4060379177903557,6.890126528249542,19.31439045248399,0,0
+139,caso_139,Siento mareos constantes al caminar.,1,2,Autocuidado,Teleconsulta,2,0.727259204758588,7.430524016619149,12.942008663121129,0,0
+140,caso_140,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9435641654419213,6.718520656350892,16.61213180411403,0,0
+141,caso_141,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,5,1.9248945898842225,11.649200753436556,14.192441765497648,0,0
+142,caso_142,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5035645916507283,8.140612398356009,16.433424020126346,0,0
+143,caso_143,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.9944970117847709,6.366353844805547,17.211363106814915,0,0
+144,caso_144,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.6017566196335393,8.631960726068678,18.637934429657612,0,0
+145,caso_145,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.5696809887549352,8.27845043150231,13.651370174084825,0,0
+146,caso_146,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.07377389470906559,6.222750202906109,12.087966629267843,0,0
+147,caso_147,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.2191286679597937,5.900474221157568,13.095085040550458,0,0
+148,caso_148,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.005358046457723,9.03479722001452,19.20014913478484,0,0
+149,caso_149,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.1029575024999787,7.224803707922738,18.991120620500123,0,0
+150,caso_150,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,3,0.5572929284732229,9.191203278887057,16.779304817362465,0,0
+151,caso_151,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.8165317719333074,8.937512778605267,16.804134883469228,0,0
+152,caso_152,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.47912378133394484,9.592212783245186,17.320293396370044,0,0
+153,caso_153,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.2897897441824462,7.601230776829359,13.402970228987597,0,0
+154,caso_154,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.978905520555126,8.344533349767444,19.31529556739968,0,0
+155,caso_155,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.9713009082212014,11.23122252417127,15.350164199136586,0,0
+156,caso_156,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.4841105430230008,6.905007740297383,15.06510822599598,0,0
+157,caso_157,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.344271094811757,6.148362465515602,16.1513416422627,0,0
+158,caso_158,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.5232392306574352,5.695935288537468,12.37572773420044,0,0
+159,caso_159,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.47527508798479934,9.006098622026514,13.330266950048635,0,0
+160,caso_160,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.4564326972237192,9.178290005344508,17.904268931410964,0,0
+161,caso_161,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.7355662654385065,8.960044874033848,12.662389343401012,0,0
+162,caso_162,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.264611661187159,6.542396630240623,16.825216875731105,0,0
+163,caso_163,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2670594215217894,6.085288275042409,13.962792877450568,0,0
+164,caso_164,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.071549368149517,5.1588173621568085,15.114364912335812,0,0
+165,caso_165,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.1805795401088166,6.284104892948399,14.309549894165599,0,0
+166,caso_166,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.670604991178476,9.210111112306274,14.845381731719593,0,0
+167,caso_167,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.6415601299434717,6.995024400541865,17.752367241473962,0,0
+168,caso_168,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.37303702079970846,6.997886552942083,14.376973724985401,0,0
+169,caso_169,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.08155028310952783,9.50650245007202,16.531237122375178,0,0
+170,caso_170,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.1817858863764836,7.271318688516286,15.808403217592797,0,0
+171,caso_171,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.3551287236845648,8.439065658643429,17.309369322901183,0,0
+172,caso_172,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,0,0.033175657855712304,8.735093734302572,19.494637914598066,0,0
+173,caso_173,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.024186116598562,7.403442810526183,17.860576777682002,0,0
+174,caso_174,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.4529915503958759,8.185511751763118,13.719523028726055,0,0
+175,caso_175,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,2,1.2903455808188997,10.46452783329937,12.249465080490278,0,0
+176,caso_176,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,1,0.3487328580099829,10.045856599955835,14.098112354398602,0,0
+177,caso_177,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.381875476204932,6.26431636177916,16.76062344560204,0,0
+178,caso_178,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.7734706926010748,10.33299644357004,12.411406507874002,0,0
+179,caso_179,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.873459977473469,8.826157735950698,15.970929977609892,0,0
+180,caso_180,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.2750418882919865,5.824508218085737,16.774742791335115,0,0
+181,caso_181,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.682132702100517,7.436947239530085,14.673951126535687,0,0
+182,caso_182,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.22694704248117814,10.10714249419404,18.167297629966576,0,0
+183,caso_183,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.8493872365571256,8.805095800514342,12.852786025070174,0,0
+184,caso_184,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.754678706761962,7.7271883684870115,12.60110225388647,0,0
+185,caso_185,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,2,0.5158832554303112,8.316288381330665,17.825510049628825,0,0
+186,caso_186,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.319968092068358,6.760841804737517,15.963930529649588,0,0
+187,caso_187,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.6344444004024317,6.089624369054415,17.507219171421887,0,0
+188,caso_188,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.1104016231989247,5.883679954662821,15.47861870882997,0,0
+189,caso_189,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.059301156712013,5.827576190458648,13.971216265912854,0,0
+190,caso_190,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.48370458180090337,5.395120742874669,18.5528185413936,0,0
+191,caso_191,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.18620553561179842,5.019168571508259,18.395327031751833,0,0
+192,caso_192,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,2,1.7944315159066535,9.639679984725941,17.557571766835416,0,0
+193,caso_193,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.800836114326661,6.892116620721529,14.1771610978397,0,0
+194,caso_194,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2662029145465359,7.340206614489715,16.721845334952697,0,0
+195,caso_195,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.6780595820974014,10.058790041533472,14.887791175520213,0,0
+196,caso_196,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.6984191492253218,7.542188990802556,12.732656586613073,0,0
+197,caso_197,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.4519113577404787,9.457257788866642,19.338508603697942,0,0
+198,caso_198,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,3,1.7942205199051542,6.828139747114934,13.094549047351691,0,0
+199,caso_199,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7741728485302346,6.927906961382259,19.60189883056642,0,0
+200,caso_200,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5597510917152477,5.804962789314121,15.568046183663647,0,0
+201,caso_201,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2840632923085755,6.297673670741562,13.481063430708957,0,0
+202,caso_202,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.16827992999009767,5.83982196418185,16.335207579026864,0,0
+203,caso_203,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.32325742818922754,5.385320333849709,18.983566687011265,0,0
+204,caso_204,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7971083770541585,6.329323579596492,17.85779909127649,0,0
+205,caso_205,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2128581193191799,5.936673345922785,18.452489182891597,0,0
+206,caso_206,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.018394103233259296,6.783066711429614,17.27026693368574,0,0
+207,caso_207,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.2029430857320642,5.4409453961668195,17.53821251614282,0,0
+208,caso_208,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.3270035382161116,7.5126227045045635,18.793565212522555,0,0
+209,caso_209,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.010123167692437374,7.030626792821579,13.997344070873488,0,0
+210,caso_210,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.3216161028349973,8.46398507461119,15.915399709145124,0,0
+211,caso_211,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,3,1.0974675787331722,5.333340417779766,13.769675534556818,0,0
+212,caso_212,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.3837903953853865,10.180252788839642,19.901344063973177,0,0
+213,caso_213,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.303922519005201,9.071324855950648,19.552474717492906,0,0
+214,caso_214,Tengo una ligera presión en el pecho.,3,3,Autocuidado,Derivación presencial,3,0.44853861892111957,4.939092810614351,12.315414490948047,0,0
+215,caso_215,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4243584426950717,10.665830187335734,17.644601380125508,0,0
+216,caso_216,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.47449817499360014,9.99973257818448,19.40198653932533,0,0
+217,caso_217,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.6507993963185355,5.017267155447718,13.444602761018668,0,0
+218,caso_218,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.4929828102360483,7.154248699119271,16.543561844421035,0,0
+219,caso_219,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.2992657980944293,10.136473476852798,19.323906380704337,0,0
+220,caso_220,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.6984468209883559,10.188004963290306,12.27156782868639,0,0
+221,caso_221,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.3152257846006867,6.422351900738951,17.57936213797472,0,0
+222,caso_222,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1366172066709432,6.3927131466912055,14.378792058980405,0,0
+223,caso_223,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.18734953565618495,6.410182152404477,19.395169563012242,0,0
+224,caso_224,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.735431606118867,7.642569517264995,19.768465961322942,0,0
+225,caso_225,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5304047353634509,8.239933364545227,19.554131912907472,0,0
+226,caso_226,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.48797928675816715,6.701461124176802,15.793713733259711,0,0
+227,caso_227,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9460211095048912,8.721229406303777,18.896341207914507,0,0
+228,caso_228,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7861954493335208,9.27102107813606,18.756395188280564,0,0
+229,caso_229,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7840931103542266,6.004192327697814,14.552803785946045,0,0
+230,caso_230,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2622772519945258,6.7768989180586505,18.631323793205418,0,0
+231,caso_231,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.5896226070832968,9.86972012239061,12.296061077723941,0,0
+232,caso_232,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.0052741862103842,10.37651521233358,16.770159027856423,0,0
+233,caso_233,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.1538077692527182,8.223872421946716,13.840070698301624,1,0
+234,caso_234,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9850353876377278,8.17771629922962,12.96453508621823,0,0
+235,caso_235,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.390485975596089,5.0335180436347455,12.615625613033673,0,0
+236,caso_236,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4449042305230106,8.129378431463739,17.570310207025116,0,0
+237,caso_237,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5615447248817116,7.757248323611851,14.71899971014453,0,0
+238,caso_238,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.04863193286290768,5.503454954671286,17.798134172230093,0,0
+239,caso_239,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2909445918143356,6.906403977510622,12.522850726391539,0,0
+240,caso_240,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3542213588140979,6.617926337441833,14.522322702644882,0,0
+241,caso_241,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.8809171687058286,6.001344355372186,16.315930339002698,0,0
+242,caso_242,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.9078571540051747,7.8403321475042445,18.32578531871171,0,0
+243,caso_243,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.829728780440897,7.098416822420165,14.55002002345656,0,0
+244,caso_244,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.7403174005108888,6.705301513578377,17.00713101149607,0,0
+245,caso_245,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.030913233057734857,4.749486023973242,19.087821985889498,0,0
+246,caso_246,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.8566371251754508,11.199800809614821,16.926905505458436,0,0
+247,caso_247,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8563682966346287,8.41792301795892,13.863675798029071,0,0
+248,caso_248,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9333096380873391,10.007923552954276,12.195206252452305,0,0
+249,caso_249,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9272399541785057,10.662267385822535,18.96079099120744,0,0
+250,caso_250,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7060189109347201,8.696672104509064,12.170155286803098,0,0
+251,caso_251,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.5888977841391714,5.1104195126637135,18.997613381473595,0,0
+252,caso_252,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7701954572038505,7.9928347081151365,16.231497072217696,0,0
+253,caso_253,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7022733430337138,9.22332005115899,19.51254158810317,0,0
+254,caso_254,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6338440103125553,9.106480855418535,18.390265886189322,0,0
+255,caso_255,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,1,0.338985493372185,6.928942770750261,19.9834728842667,0,0
+256,caso_256,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.1136025249167003,5.879084341690083,14.805694523613681,0,0
+257,caso_257,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.872309548321562,7.574964983113909,18.137506311449016,0,0
+258,caso_258,Siento mareos constantes al caminar.,2,2,Autocuidado,Teleconsulta,2,1.392059593349946,7.570553371741757,15.215447308873937,0,0
+259,caso_259,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.14012234017873,9.015625788168338,15.839004962431272,0,0
+260,caso_260,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.19435298754153707,7.619022815555008,17.02004370574696,0,0
+261,caso_261,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2300144533983395,7.3665948087854165,18.98941691349071,0,0
+262,caso_262,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.9801077002085266,11.899199192966405,19.87266775359436,0,0
+363,caso_363,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9165057809830333,6.407440619869828,14.680950834073135,0,0
+364,caso_364,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.0912335786318699,9.554911334067933,17.948066050332862,0,0
+365,caso_365,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.8829296175530503,6.084124225967726,13.286079168386465,0,0
+366,caso_366,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.7722052756015485,8.191543384829448,18.543736192952498,0,0
+367,caso_367,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9223811276478284,10.497133242091971,18.657073423661934,0,0
+368,caso_368,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.8107012839121275,11.071295104482624,16.05974187008669,0,0
+369,caso_369,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3915822695785929,6.444072761874038,12.05108697373467,0,0
+370,caso_370,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.1387226017503309,9.066266429782408,14.296305065399302,0,0
+371,caso_371,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.2015560027548533,4.865346424486097,16.935415347005936,0,0
+372,caso_372,Siento mareos constantes al caminar.,3,2,Teleconsulta,Teleconsulta,3,0.036443651303099456,9.115157401710208,19.84948942421939,0,0
+373,caso_373,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.1888859215118568,4.953817895503751,17.054508216133346,0,0
+374,caso_374,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,2,1.3660135468327137,7.7497372901949175,14.078428648513277,0,0
+375,caso_375,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.14237729692045797,8.92614949159778,17.072045624796893,0,0
+376,caso_376,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.6379512605875226,5.5374558246801655,16.319883037726843,0,0
+377,caso_377,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.6897506219389091,7.0652589933347585,18.23876316120915,0,0
+378,caso_378,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,0.04654387147165173,8.38005928183005,12.855845110615668,0,0
+379,caso_379,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.6289369651778716,9.949156184454317,18.088223220016225,0,0
+380,caso_380,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5637095495467999,8.410595346858583,16.330132629408883,0,0
+381,caso_381,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.2363296552433125,8.400020322045911,19.703936030871958,0,0
+382,caso_382,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.3934743307283013,8.649820990813879,14.734977328309489,0,0
+383,caso_383,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.257885693559768,6.768680047001484,17.060975145071584,0,0
+384,caso_384,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.754944027054106,7.829119988077623,19.45622484408014,0,0
+385,caso_385,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.4701420876077715,6.5597283884163256,12.820077823925434,0,0
+386,caso_386,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.6069618607696972,11.057665228771468,19.49782789789161,0,0
+387,caso_387,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.564069145142613,1.064419913739336,17.503085778406508,0,0
+388,caso_388,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,0.35487908755944564,2.759987588141285,12.542696472841374,0,0
+389,caso_389,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.5012295032817167,2.273264325146513,14.40770853557453,0,0
+390,caso_390,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.613669478534528,2.29736951620542,17.665376709162253,0,0
+391,caso_391,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9810102840013466,2.901118702697827,12.538804811750174,0,0
+392,caso_392,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Autocuidado,0,0.825235353822853,1.342614345923636,16.657363681410185,0,0
+393,caso_393,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.7440361715855663,1.779368244892362,14.767064455623654,0,0
+394,caso_394,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.5528259214839937,2.221551334091881,16.967324142139816,0,0
+395,caso_395,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.6816070805060357,1.790268183431079,12.365936270500104,0,0
+396,caso_396,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.8615146512071294,2.094258104872038,18.97229444921901,0,0
+397,caso_397,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7168255036860236,11.3095351985877,19.787911753419174,0,0
+398,caso_398,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.8579880547500367,1.24878715628529,19.751022842285533,0,0
+399,caso_399,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5017421355829947,2.68164707884435,17.9972146539434,0,0
+400,caso_400,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.5090857481693647,2.044082035233139,13.040689921045056,0,0
+401,caso_1,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.749080237694725,1.36782345071032,17.657909074507188,0,0
+402,caso_2,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9014286128198323,2.316746052897233,13.220312343314092,0,0
+403,caso_3,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.4639878836228102,3.495502118309954,16.610306881334505,0,0
+404,caso_4,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.1973169683940732,2.156061765040523,16.85372037106285,0,0
+405,caso_5,Tengo una ligera presión en el pecho.,3,3,Teleconsulta,Derivación presencial,0,0.31203728088487304,1.232334887068543,15.393045370419088,0,0
+4066,caso_6,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3119890406724053,1.685128411649607,17.891553884997784,0,0  
+407,caso_7,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.11616722433639892,3.451377296741378,19.47493611815212,0,0
+408,caso_8,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7323522915498704,2.79737820043166,19.40454810325421,0,0
+409,caso_9,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2022300234864176,2.634521882002,15.606714971233057,0,0
+410,caso_10,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.416145155592091,2.963865216308893,12.905904366726041,0,0
+411,caso_11,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,2,0.041168988591604894,3.957050814134094,19.878729591698676,0,0
+412,caso_12,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.9398197043239886,1.640191506628819,18.711184691567475,0,0
+413,caso_13,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.6648852816008435,1.36852816322618,12.997301449626136,0,0
+414,caso_14,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.4246782213565523,3.865305550096268,19.36673506093898,0,0
+415,caso_15,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.36364993441420124,3.154673207432998,18.959170896497028,0,0
+416,caso_16,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.36680901970686763,2.057482151576787,16.150704457008576,0,0
+417,caso_17,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.6084844859190754,2.367749116107462,16.730203485959436,0,0
+418,caso_18,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.0495128632644757,3.021500135483971,15.192021630961042,0,0
+419,caso_19,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.8638900372842315,1.899000773746462,12.43809311057625,0,0
+420,caso_20,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.5824582803960838,2.096705457022164,14.681577933167208,0,0
+221,caso_221,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.3152257846006867,6.422351900738951,17.57936213797472,0,0
+222,caso_222,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.1366172066709432,2.3927131466912055,14.378792058980405,0,0
+223,caso_223,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.18734953565618495,2.410182152404477,19.395169563012242,0,0
+224,caso_224,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.735431606118867,1.642569517264995,19.768465961322942,0,0
+225,caso_225,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.5304047353634509,1.239933364545227,19.554131912907472,0,0
+226,caso_226,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.48797928675816715,1.701461124176802,15.793713733259711,0,0
+227,caso_227,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9460211095048912,1.721229406303777,18.896341207914507,0,0
+228,caso_228,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7861954493335208,1.27102107813606,18.756395188280564,0,0
+229,caso_229,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7840931103542266,2.004192327697814,14.552803785946045,0,0
+230,caso_230,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2622772519945258,1.7768989180586505,18.631323793205418,0,0
+231,caso_231,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.5896226070832968,1.86972012239061,12.296061077723941,0,0
+232,caso_232,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.0052741862103842,1.37651521233358,16.770159027856423,0,0
+233,caso_233,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.1538077692527182,1.223872421946716,13.840070698301624,0,0
+234,caso_234,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.9850353876377278,8.17771629922962,12.96453508621823,0,0
+235,caso_235,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.390485975596089,5.0335180436347455,12.615625613033673,0,0
+236,caso_236,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4449042305230106,8.129378431463739,17.570310207025116,0,0
+237,caso_237,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5615447248817116,7.757248323611851,14.71899971014453,0,0
+238,caso_238,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.04863193286290768,5.503454954671286,17.798134172230093,0,0
+239,caso_239,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.2909445918143356,6.906403977510622,12.522850726391539,0,0
+240,caso_240,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.3542213588140979,6.617926337441833,14.522322702644882,0,0
+241,caso_241,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.8809171687058286,6.001344355372186,16.315930339002698,0,0
+242,caso_242,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.9078571540051747,7.8403321475042445,18.32578531871171,0,0
+243,caso_243,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.829728780440897,7.098416822420165,14.55002002345656,0,0
+244,caso_244,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.7403174005108888,6.705301513578377,17.00713101149607,0,0
+245,caso_245,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.030913233057734857,4.749486023973242,19.087821985889498,0,0
+246,caso_246,Tengo una ligera presión en el pecho.,2,2,Derivación presencial,Derivación presencial,3,1.8566371251754508,11.199800809614821,16.926905505458436,0,0
+247,caso_247,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.8563682966346287,1.41792301795892,13.863675798029071,0,0
+248,caso_248,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.9333096380873391,2.007923552954276,12.195206252452305,0,0
+249,caso_249,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.9272399541785057,2.662267385822535,18.96079099120744,0,0
+250,caso_250,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,1.7060189109347201,1.696672104509064,12.170155286803098,0,0
+251,caso_251,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.5888977841391714,1.1104195126637135,18.997613381473595,0,0
+252,caso_252,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.7701954572038505,1.9928347081151365,16.231497072217696,0,0
+253,caso_253,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7022733430337138,1.22332005115899,19.51254158810317,0,0
+254,caso_254,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,0.6338440103125553,2.106480855418535,18.390265886189322,0,0
+255,caso_255,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,1,0.338985493372185,3.928942770750261,19.9834728842667,0,0
+256,caso_256,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.1136025249167003,1.879084341690083,14.805694523613681,0,0
+257,caso_257,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.872309548321562,2.574964983113909,18.137506311449016,0,0
+258,caso_258,Siento mareos constantes al caminar.,2,2,Autocuidado,Autocuidado,2,1.392059593349946,2.570553371741757,15.215447308873937,0,0
+259,caso_259,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.14012234017873,3.015625788168338,15.839004962431272,0,0
+260,caso_260,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.19435298754153707,2.619022815555008,17.02004370574696,0,0
+261,caso_261,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.2300144533983395,3.3665948087854165,18.98941691349071,0,0
+262,caso_262,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.9801077002085266,2.899199192966405,19.87266775359436,0,0
+63,caso_63,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.6574750183038587,10.133744293896399,16.19512215462064,0,0
+64,caso_64,Tengo una ligera presión en el pecho.,2,2,Derivación presencial,Derivación presencial,5,0.7135066533871786,8.213719243970136,15.526101975505824,0,0
+65,caso_65,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.5618690193747615,10.334904310222012,15.206104487002609,0,0
+66,caso_66,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.085392166316497,7.334615643458721,16.477122650465745,0,0
+184,caso_184,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.754678706761962,7.7271883684870115,12.60110225388647,0,0
+185,caso_185,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.5158832554303112,8.316288381330665,17.825510049628825,0,0
+186,caso_186,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.319968092068358,6.760841804737517,15.963930529649588,0,0
+187,caso_187,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,1.6344444004024317,6.089624369054415,17.507219171421887,0,0
+188,caso_188,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.1104016231989247,5.883679954662821,15.47861870882997,0,0
+189,caso_189,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,4,1.059301156712013,5.827576190458648,13.971216265912854,0,0
+190,caso_190,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,3,0.48370458180090337,5.395120742874669,18.5528185413936,0,0
+191,caso_191,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.18620553561179842,5.019168571508259,18.395327031751833,0,0
+192,caso_192,Siento mareos constantes al caminar.,2,2,Autocuidado,Autocuidado,3,1.7944315159066535,9.639679984725941,17.557571766835416,0,0
+193,caso_193,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,1.800836114326661,6.892116620721529,14.1771610978397,0,0
+194,caso_194,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2662029145465359,7.340206614489715,16.721845334952697,0,0
+195,caso_195,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.6780595820974014,10.058790041533472,14.887791175520213,0,0
+196,caso_196,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,0.6984191492253218,7.542188990802556,12.732656586613073,0,0
+197,caso_197,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.4519113577404787,9.457257788866642,19.338508603697942,0,0
+198,caso_198,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Teleconsulta,3,1.7942205199051542,6.828139747114934,13.094549047351691,0,0
+199,caso_199,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.7741728485302346,6.927906961382259,19.60189883056642,0,0
+200,caso_200,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.5597510917152477,5.804962789314121,15.568046183663647,0,0
+201,caso_201,Siento mareos constantes al caminar.,2,2,Teleconsulta,Teleconsulta,5,1.2840632923085755,6.297673670741562,13.481063430708957,0,0
+202,caso_202,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.16827992999009767,1.83982196418185,16.335207579026864,0,0
+203,caso_203,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.32325742818922754,1.385320333849709,18.983566687011265,0,0
+204,caso_204,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,1.7971083770541585,2.329323579596492,17.85779909127649,0,0
+205,caso_205,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.2128581193191799,2.936673345922785,18.452489182891597,0,0
+206,caso_206,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,4,0.018394103233259296,1.783066711429614,17.27026693368574,0,0
+207,caso_207,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.2029430857320642,1.4409453961668195,17.53821251614282,0,0
+208,caso_208,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,3,1.3270035382161116,1.5126227045045635,18.793565212522555,0,0
+209,caso_209,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,3,0.010123167692437374,2.030626792821579,13.997344070873488,0,0
+210,caso_210,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.3216161028349973,8.46398507461119,15.915399709145124,0,0
+211,caso_211,Presento fiebre leve desde hace algunas horas.,1,1,Teleconsulta,Teleconsulta,4,1.0974675787331722,2.333340417779766,13.769675534556818,0,0
+212,caso_212,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.3837903953853865,2.180252788839642,19.901344063973177,0,0
+213,caso_213,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,1.303922519005201,2.071324855950648,19.552474717492906,0,0
+214,caso_214,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,4,0.44853861892111957,1.939092810614351,12.315414490948047,0,0
+215,caso_215,Presento fiebre leve desde hace algunas horas.,1,1,Autocuidado,Autocuidado,5,1.4243584426950717,3.665830187335734,17.644601380125508,0,0
+216,caso_216,Siento mareos constantes al caminar.,2,2,Derivación presencial,Teleconsulta,5,0.47449817499360014,2.99973257818448,19.40198653932533,0,0
+217,caso_217,Tengo una ligera presión en el pecho.,3,3,Derivación presencial,Derivación presencial,5,0.6507993963185355,2.017267155447718,13.444602761018668,0,0

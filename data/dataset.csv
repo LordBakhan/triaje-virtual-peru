@@ -1,0 +1,151 @@
+id_caso,texto_paciente,sintomas_extraidos,nivel_urgencia
+1,"tengo dolor de cabeza intenso",dolor de cabeza,1
+2,"siento fiebre desde ayer",fiebre,1
+3,"me duele la garganta al tragar",dolor de garganta,1
+4,"tos seca constante por días",tos seca,2
+5,"dolor de estómago con diarrea",dolor de estómago;diarrea,2
+6,"mareos y vértigo al levantarse",mareos;vértigo,2
+7,"sarpullido con picazón en brazos",sarpullido;picazón,1
+8,"dolor de diente punzante",dolor de diente,2
+9,"fiebre alta y dolor de cabeza",fiebre;dolor de cabeza,2
+10,"dolor de espalda baja constante",dolor de espalda,1
+11,"presión en el pecho y falta de aire",presión en el pecho;falta de aire,3
+12,"tos con flema y fiebre",tos;fiebre,2
+13,"ardor al orinar frecuente",ardor al orinar,2
+14,"pérdida de apetito y dolor de estómago",pérdida de apetito;dolor de estómago,1
+15,"ojos rojos y lagrimeo constante",ojos rojos;lagrimeo,1
+16,"insomnio y ansiedad por trabajo",insomnio;ansiedad,1
+17,"congestión nasal y estornudos frecuentes",congestión nasal;estornudos,1
+18,"mareos y hormigueo en la cara",mareos;hormigueo en la cara,2
+19,"fiebre, tos seca y dolor de garganta",fiebre;tos seca;dolor de garganta,2
+20,"dolor de articulaciones con hinchazón",dolor de articulaciones;hinchazón,2
+21,"dolor de brazo y mareos",dolor de brazo;mareos,2
+22,"tos persistente y dificultad para respirar",tos persistente;dificultad para respirar,3
+23,"sarpullido con sangrado nasal",sarpullido;sangrado nasal,2
+24,"dolor de cuello y rigidez",dolor de cuello;rigidez,1
+25,"dolor de diente con inflamación",dolor de diente;hinchazón,2
+26,"ansiedad intensa e insomnio por estudios",ansiedad;insomnio,1
+27,"tos seca y fiebre por infección",tos seca;fiebre,2
+28,"dolor de estómago, náuseas y vómitos",dolor de estómago;náuseas;vómitos,2
+29,"mareos y pérdida de equilibrio",mareos;pérdida de equilibrio,2
+30,"dolor de cabeza con visión borrosa",dolor de cabeza;visión borrosa,2
+31,"dolor de garganta y tos persistente",dolor de garganta;tos persistente,2
+32,"fiebre alta y mareos repentinos",fiebre;mareos,3
+33,"dolor abdominal intenso y diarrea",dolor de estómago;diarrea,2
+34,"tos con dificultad para respirar",tos;dificultad para respirar,3
+35,"dolor de diente y dolor de cabeza",dolor de diente;dolor de cabeza,2
+36,"sarpullido, picazón y fiebre",sarpullido;picazón;fiebre,2
+37,"dolor de espalda y mareos constantes",dolor de espalda;mareos,2
+38,"tos seca, fiebre y dolor de garganta intenso",tos seca;fiebre;dolor de garganta,2
+39,"náuseas y vómitos intensos",náuseas;vómitos,2
+40,"ardor al orinar y dolor de estómago",ardor al orinar;dolor de estómago,2
+41,"fiebre, tos y dificultad para respirar",fiebre;tos;dificultad para respirar,3
+42,"dolor de articulaciones e inflamación de rodilla",dolor de articulaciones;inflamación de rodilla,2
+43,"mareos y hormigueo en extremidades",mareos;hormigueo en las extremidades,3 
+44,"dolor de cabeza persistente",dolor de cabeza,1
+45,"dolor abdominal y fiebre repentina",dolor de estómago;fiebre,2
+46,"tos seca, dolor de garganta y fiebre",tos seca;dolor de garganta;fiebre,2
+47,"dolor de diente y fiebre",dolor de diente;fiebre,2
+48,"insomnio y ansiedad leve",insomnio;ansiedad,1
+49,"ojos rojos, picazón y lagrimeo",ojos rojos;picazón;lagrimeo,1
+50,"fiebre y dolor de estómago",fiebre;dolor de estómago,2
+51,"tos persistente y presión en el pecho",tos persistente;presión en el pecho,3
+52,"mareos, vértigo y ansiedad por trabajo",mareos;vértigo;ansiedad,1
+53,"dolor abdominal con diarrea y vómitos",dolor de estómago;diarrea;vómitos,2
+54,"sarpullido y fiebre alta",sarpullido;fiebre,2
+55,"dolor de espalda y dolor de cuello",dolor de espalda;dolor de cuello,1
+56,"dolor de brazo y mareos constantes",dolor de brazo;mareos,2
+57,"tos seca, fiebre y mareos",tos seca;fiebre;mareos,2
+58,"dolor de cabeza y ansiedad",dolor de cabeza;ansiedad,1
+59,"dolor de estómago, fiebre y diarrea",dolor de estómago;fiebre;diarrea,2
+60,"dolor de diente y sarpullido",dolor de diente;sarpullido,2
+61,"fiebre y dolor de garganta aguda",fiebre;dolor de garganta,2
+62,"tos seca y dolor de estómago",tos seca;dolor de estómago,2
+63,"mareos e insomnio",mareos;insomnio,1
+64,"dolor abdominal, náuseas y vómitos",dolor de estómago;náuseas;vómitos,2
+65,"fiebre alta, dolor de cabeza y mareos",fiebre;dolor de cabeza;mareos,3
+66,"dolor lumbar y ardor al orinar",dolor lumbar;ardor al orinar,3
+67,"dolor de estómago con gases",dolor de estómago;gases,1
+68,"fatiga y somnolencia",fatiga;somnolencia,1
+69,"tos persistente, fiebre y mareos",tos persistente;fiebre;mareos,3
+70,"dolor de cuello y mareos",dolor de cuello;mareos,2
+71,"tos con flema y dolor de pecho",tos;flema;dolor de pecho,2
+72,"dolor de articulaciones y fatiga",dolor de articulaciones;fatiga,2
+73,"náuseas y dolor de cabeza",náuseas;dolor de cabeza,2
+74,"dolor de diente y ardor al masticar",dolor de diente;ardor,1
+75,"mareos, vómitos y fatiga",mareos;vómitos;fatiga,3
+76,"tos seca y ardor en garganta",tos seca;ardor,2
+77,"dolor lumbar y rigidez",dolor lumbar;rigidez,2
+78,"dolor de articulaciones y mareos",dolor de articulaciones;mareos,2
+79,"fatiga y malestar general",fatiga;malestar general,1
+80,"fiebre alta, dolor de cabeza y diarrea",fiebre;dolor de cabeza;diarrea,3
+81,"dolor de espalda baja y mareos",dolor de espalda;mareos,2
+82,"tos persistente, fiebre y dolor de garganta",tos persistente;fiebre;dolor de garganta,3
+83,"náuseas y palpitaciones",náuseas;palpitaciones,2
+84,"insomnio, fatiga y mareos",insomnio;fatiga;mareos,2
+85,"dolor de diente y dolor de cuello",dolor de diente;dolor de cuello,1
+86,"fiebre, vómitos y dolor de estómago",fiebre;vómitos;dolor de estómago,3
+87,"mareos, insomnio y ansiedad leve",mareos;insomnio;ansiedad,2
+88,"tos seca y dolor de cabeza",tos seca;dolor de cabeza,2
+89,"dolor de articulaciones, hinchazón y rigidez",dolor de articulaciones;hinchazón;rigidez,2
+90,"dolor de espalda, mareos y fatiga",dolor de espalda;mareos;fatiga,2
+91,"náuseas, diarrea y malestar general",náuseas;diarrea;malestar general,2
+92,"dolor de cabeza y visión borrosa",dolor de cabeza;visión borrosa,2
+93,"fiebre alta, tos seca y dificultad para respirar",fiebre;tos seca;dificultad para respirar,3
+94,"dolor de diente intenso con ardor",dolor de diente;ardor,2
+95,"mareos, vómitos y dolor de estómago",mareos;vómitos;dolor de estómago,3
+96,"fatiga, insomnio y dolor de cabeza",fatiga;insomnio;dolor de cabeza,2
+97,"dolor lumbar y dolor de espalda",dolor lumbar;dolor de espalda,2
+98,"tos persistente y fiebre alta",tos persistente;fiebre,3
+99,"dolor de articulaciones e inflamación",dolor de articulaciones;inflamación,2
+100,"mareos y pérdida de equilibrio",mareos;pérdida de equilibrio,2
+101,"dolor de diente, hinchazón y sensibilidad",dolor de diente;hinchazón;sensibilidad,2
+102,"fiebre, dolor de garganta y tos seca",fiebre;dolor de garganta;tos seca,3
+103,"ardor al orinar, dolor lumbar y fatiga",ardor al orinar;dolor lumbar;fatiga,3
+104,"dolor de espalda y presión en el pecho",dolor de espalda;presión en el pecho,2
+105,"dolor de estómago con vómitos",dolor de estómago;vómitos,2
+106,"ojos rojos, lagrimeo y picazón",ojos rojos;lagrimeo;picazón,1
+107,"congestión nasal y tos seca",congestión nasal;tos seca,1
+108,"palpitaciones y falta de aire",palpitaciones;falta de aire,3
+109,"dolor de estómago, gases y vómitos",dolor de estómago;gases;vómitos,2
+110,"dolor de cabeza y fatiga",dolor de cabeza;fatiga,1
+111,"mareos y visión borrosa",mareos;visión borrosa,2
+112,"insomnio y malestar general",insomnio;malestar general,1
+113,"tos seca persistente y dolor de pecho",tos seca;dolor de pecho,3
+114,"dolor lumbar y palpitaciones",dolor lumbar;palpitaciones,3
+115,"dolor de garganta con ardor",dolor de garganta;ardor,2
+116,"náuseas y diarrea intensa",náuseas;diarrea,2
+117,"tos con flema y fiebre alta",tos;flema;fiebre,2
+118,"dolor de articulaciones y rigidez",dolor de articulaciones;rigidez,2
+119,"insomnio y fatiga intensa",insomnio;fatiga,1
+120,"mareos y malestar general",mareos;malestar general,2
+121,"dolor de diente y inflamación leve",dolor de diente;hinchazón,1
+122,"fiebre alta y dolor de cuello",fiebre;dolor de cuello,3
+123,"dolor de estómago, fiebre y náuseas",dolor de estómago;fiebre;náuseas,2
+124,"tos seca con picazón en garganta",tos seca;picazón,2
+125,"mareos, ansiedad y fatiga",mareos;ansiedad;fatiga,2
+126,"dolor lumbar y dolor de hombro",dolor lumbar;dolor de hombro,2  
+127,"dolor de cabeza intenso con mareos",dolor de cabeza;mareos,2
+128,"insomnio leve y fatiga",insomnio;fatiga,1 
+129,"tos persistente y dolor de garganta",tos persistente;dolor de garganta,2
+130,"fiebre, dolor de cabeza y mareos intensos",fiebre;dolor de cabeza;mareos,3
+131,"dolor de estómago, vómitos y fatiga",dolor de estómago;vómitos;fatiga,2
+132,"dolor de diente y dolor de oído",dolor de diente;dolor de oído,1
+133,"mareos y náuseas constantes",mareos;náuseas,2
+134,"fiebre, tos seca y dolor de pecho",fiebre;tos seca;dolor de pecho,3
+135,"dolor lumbar y rigidez matutina",dolor lumbar;rigidez,2
+136,"dolor de espalda, mareos y náuseas",dolor de espalda;mareos;náuseas,2
+137,"tos seca y fatiga intensa",tos seca;fatiga,2
+138,"insomnio, ansiedad y mareos",insomnio;ansiedad;mareos,1
+139,"dolor de cabeza y visión doble",dolor de cabeza;visión borrosa,2
+140,"dolor de diente intenso con inflamación",dolor de diente;hinchazón,2
+141,"fiebre alta, mareos y fatiga",fiebre;mareos;fatiga,3
+142,"dolor de estómago con diarrea y náuseas",dolor de estómago;diarrea;náuseas,2
+143,"tos persistente, fiebre y dolor de garganta",tos persistente;fiebre;dolor de garganta,3
+144,"dolor de espalda baja y rigidez",dolor de espalda;rigidez,2
+145,"mareos y falta de aire",mareos;falta de aire,3
+146,"dolor de articulaciones, hinchazón y fatiga",dolor de articulaciones;hinchazón;fatiga,2
+147,"náuseas, ardor al orinar y dolor de estómago",náuseas;ardor al orinar;dolor de estómago,2
+148,"dolor de diente, sensibilidad y ardor",dolor de diente;sensibilidad;ardor,2
+149,"fiebre, dolor de garganta y tos persistente",fiebre;dolor de garganta;tos persistente,3
+150,"ardor al orinar, dolor lumbar y fatiga intensa",ardor al orinar;dolor lumbar;fatiga,3
