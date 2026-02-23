@@ -242,13 +242,6 @@
       color: #0a3f62;
     }
 
-    .ml-info {
-      margin-top: 10px;
-      font-size: 13px;
-      color: #1a4f75;
-      font-weight: 700;
-    }
-
     .accion-badge {
       display: inline-block;
       margin-top: 4px;
@@ -380,7 +373,6 @@
         const categorias = data.categorias || {};
         const prioridades = data.prioridades || {};
         const urgencia = data.overall_urgency ?? 0;
-        const urgenciaReglas = data.rule_based_urgency ?? urgencia;
         const recomendacion = data.recommended_action || "Sin recomendacion.";
 
         if (!sintomas.length) {
@@ -394,21 +386,6 @@
         const claseUrgencia = urgencia === 1 ? "prioridad1" : urgencia === 2 ? "prioridad2" : "prioridad3";
         const accionBadgeClass = `accion-badge ${claseUrgencia}`;
 
-        let mlInfo = "ML no activo. Se aplicaron reglas.";
-        if (data.ml_enabled) {
-          if (data.ml_used && data.ml_predicted_urgency != null) {
-            if (data.ml_predicted_urgency > urgenciaReglas) {
-              mlInfo = `ML elevó la urgencia de ${urgenciaReglas} a ${urgencia} (prediccion ML: ${data.ml_predicted_urgency}).`;
-            } else if (data.ml_predicted_urgency < urgenciaReglas) {
-              mlInfo = `Se mantiene urgencia ${urgenciaReglas} por reglas de seguridad (ML predijo ${data.ml_predicted_urgency}).`;
-            } else {
-              mlInfo = `ML y reglas coinciden en urgencia ${urgencia}.`;
-            }
-          } else {
-            mlInfo = "ML no aplicado en este caso. Se usaron reglas.";
-          }
-        }
-
         resultadoEl.innerHTML = `
           <h3>Sintomas detectados</h3>
           <div>${sintomasHTML}</div>
@@ -417,10 +394,8 @@
           <h3>Prioridades</h3>
           <div>${prioridadesHTML || "<p class='row'>Sin prioridades.</p>"}</div>
           <p class="row">Nivel global de urgencia: <strong>${escapeHtml(urgencia)}</strong></p>
-          <p class="row">Urgencia por reglas: <strong>${escapeHtml(urgenciaReglas)}</strong></p>
           <p class="row"><strong>Accion recomendada:</strong></p>
           <span class="${accionBadgeClass}">${escapeHtml(recomendacion)}</span>
-          <p class="ml-info">${escapeHtml(mlInfo)}</p>
         `;
       } catch (err) {
         resultadoEl.innerHTML = `<p class="error">Error de conexion: ${escapeHtml(err)}</p>`;
