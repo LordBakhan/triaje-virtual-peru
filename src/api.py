@@ -7,6 +7,7 @@ from typing import Dict, List, Optional
 
 import joblib
 from fastapi import FastAPI
+from fastapi import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
@@ -721,6 +722,46 @@ def health_api():
 @app.post("/api/analizar", include_in_schema=False)
 def analizar_api(req: TriageRequest):
     return analizar(req)
+
+
+@app.get("/observaciones")
+def observaciones_estado():
+    return {
+        "csv_path": str(OBSERVACIONES_CSV),
+        "exists": OBSERVACIONES_CSV.exists(),
+        "observations_total": observacion_store.total_cases,
+        "alarm_ratio": (
+            observacion_store.total_alarmas_injustificadas / observacion_store.total_alarmas
+            if observacion_store.total_alarmas > 0
+            else 0.0
+        ),
+        "override_ratio": (
+            observacion_store.total_overrides / observacion_store.total_cases
+            if observacion_store.total_cases > 0
+            else 0.0
+        ),
+    }
+
+
+@app.get("/observaciones/csv")
+def observaciones_csv():
+    if not OBSERVACIONES_CSV.exists():
+        raise HTTPException(status_code=404, detail="CSV de observaciones aun no creado.")
+    return FileResponse(
+        OBSERVACIONES_CSV,
+        media_type="text/csv",
+        filename="ficha_observacion.csv",
+    )
+
+
+@app.get("/api/observaciones", include_in_schema=False)
+def observaciones_estado_api():
+    return observaciones_estado()
+
+
+@app.get("/api/observaciones/csv", include_in_schema=False)
+def observaciones_csv_api():
+    return observaciones_csv()
 
 
 @app.get("/", include_in_schema=False)
