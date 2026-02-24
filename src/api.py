@@ -1,5 +1,8 @@
 # src/api.py
+import csv
+from datetime import datetime, timezone
 from pathlib import Path
+from threading import Lock
 from typing import Dict, List, Optional
 
 import joblib
@@ -330,6 +333,125 @@ combinaciones_urgencia = [
 BASE_DIR = Path(__file__).resolve().parents[1]
 MODEL_PATH = BASE_DIR / "models" / "model_bundle.joblib"
 FRONTEND_DIR = BASE_DIR / "frontend"
+OBSERVACIONES_CSV = BASE_DIR / "data" / "ficha_observacion.csv"
+OBS_FIELDS = [
+    "id",
+    "caso",
+    "sintomas_texto",
+    "nivel_sistema_ml",
+    "nivel_referencia",
+    "recomendacion_sistema",
+    "adequacy",
+    "intime",
+    "outtime",
+    "alarm",
+    "override",
+    "alarm_event",
+    "alarm_unjustified_event",
+    "override_event",
+    "overall_urgency",
+    "ml_used",
+    "urgency_source",
+]
+
+
+class _ObservacionStore:
+    def __init__(self, path: Path):
+        self.path = path
+        self._lock = Lock()
+        self.last_id = 0
+        self.total_cases = 0
+        self.total_alarmas = 0
+        self.total_alarmas_injustificadas = 0
+        self.total_overrides = 0
+        self._bootstrap()
+
+    @staticmethod
+    def _to_int(value) -> int:
+        try:
+            return int(float(value))
+        except Exception:
+            return 0
+
+    def _bootstrap(self):
+        if not self.path.exists():
+            return
+        try:
+            with self.path.open(encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    self.total_cases += 1
+                    self.last_id = max(self.last_id, self._to_int(row.get("id")))
+                    self.total_alarmas += self._to_int(row.get("alarm_event"))
+                    self.total_alarmas_injustificadas += self._to_int(
+                        row.get("alarm_unjustified_event")
+                    )
+                    self.total_overrides += self._to_int(row.get("override_event"))
+        except Exception as exc:
+            print(f"Advertencia: no se pudo leer historial de observaciones ({exc}).")
+
+    def append(
+        self,
+        *,
+        caso: str,
+        sintomas_texto: str,
+        nivel_sistema_ml,
+        nivel_referencia: int,
+        recomendacion_sistema: str,
+        adequacy: float,
+        intime: str,
+        outtime: str,
+        alarm_event: int,
+        alarm_unjustified_event: int,
+        override_event: int,
+        overall_urgency: int,
+        ml_used: bool,
+        urgency_source: str,
+    ):
+        with self._lock:
+            self.total_cases += 1
+            self.last_id += 1
+            self.total_alarmas += int(alarm_event)
+            self.total_alarmas_injustificadas += int(alarm_unjustified_event)
+            self.total_overrides += int(override_event)
+
+            alarm_ratio = (
+                self.total_alarmas_injustificadas / self.total_alarmas
+                if self.total_alarmas > 0
+                else 0.0
+            )
+            override_ratio = (
+                self.total_overrides / self.total_cases if self.total_cases > 0 else 0.0
+            )
+
+            row = {
+                "id": self.last_id,
+                "caso": caso,
+                "sintomas_texto": sintomas_texto,
+                "nivel_sistema_ml": "" if nivel_sistema_ml is None else int(nivel_sistema_ml),
+                "nivel_referencia": int(nivel_referencia),
+                "recomendacion_sistema": recomendacion_sistema,
+                "adequacy": f"{float(adequacy):.2f}",
+                "intime": intime,
+                "outtime": outtime,
+                "alarm": f"{alarm_ratio:.4f}",
+                "override": f"{override_ratio:.4f}",
+                "alarm_event": int(alarm_event),
+                "alarm_unjustified_event": int(alarm_unjustified_event),
+                "override_event": int(override_event),
+                "overall_urgency": int(overall_urgency),
+                "ml_used": int(bool(ml_used)),
+                "urgency_source": urgency_source,
+            }
+
+            self.path.parent.mkdir(parents=True, exist_ok=True)
+            write_header = (not self.path.exists()) or self.path.stat().st_size == 0
+            with self.path.open("a", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=OBS_FIELDS)
+                if write_header:
+                    writer.writeheader()
+                writer.writerow(row)
+            return row
 
 vectorizer = None
 clf = None
@@ -343,6 +465,8 @@ if MODEL_PATH.exists():
         print(f"Advertencia: no se pudo cargar modelo ML ({exc}). Se usaran reglas.")
 else:
     print("Advertencia: modelo ML no encontrado. Se usaran reglas de urgencia.")
+
+observacion_store = _ObservacionStore(OBSERVACIONES_CSV)
 
 
 # -------------------------------------------------
@@ -361,6 +485,92 @@ app.add_middleware(
 
 class TriageRequest(BaseModel):
     texto_paciente: Optional[str] = None
+    caso: Optional[str] = None
+    intime: Optional[str] = None
+    adequacy: Optional[float] = None
+
+
+def _ahora_iso():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _clamp_adequacy(value: Optional[float], overall_urgency: int, nivel_referencia: int, tiene_sintomas: bool):
+    if value is not None:
+        try:
+            return max(0.0, min(5.0, float(value)))
+        except Exception:
+            pass
+    if not tiene_sintomas:
+        return 0.0
+    delta = abs(int(overall_urgency) - int(nivel_referencia))
+    if delta == 0:
+        return 5.0
+    if delta == 1:
+        return 3.0
+    return 1.0
+
+
+def _calcular_eventos_sistema(ml_used: bool, urgencia_ml, urgencia_reglas: int, urgencia_final: int):
+    alarm_event = int(bool(ml_used and urgencia_ml is not None and urgencia_ml != urgencia_reglas))
+    alarm_unjustified_event = int(
+        bool(
+            alarm_event
+            and urgencia_ml is not None
+            and urgencia_ml > urgencia_reglas
+            and urgencia_reglas <= 2
+        )
+    )
+    override_event = int(
+        bool(
+            ml_used
+            and urgencia_ml is not None
+            and urgencia_ml < urgencia_reglas
+            and urgencia_final == urgencia_reglas
+        )
+    )
+    return alarm_event, alarm_unjustified_event, override_event
+
+
+def _registrar_ficha_observacion(
+    *,
+    req: TriageRequest,
+    texto_original: str,
+    sintomas: List[str],
+    urgencia_ml,
+    urgencia_reglas: int,
+    urgencia_final: int,
+    recomendacion: str,
+    ml_used: bool,
+    urgency_source: str,
+):
+    intime = req.intime or _ahora_iso()
+    outtime = _ahora_iso()
+    adequacy = _clamp_adequacy(req.adequacy, urgencia_final, urgencia_reglas, bool(sintomas))
+    alarm_event, alarm_unjustified_event, override_event = _calcular_eventos_sistema(
+        ml_used=ml_used,
+        urgencia_ml=urgencia_ml,
+        urgencia_reglas=urgencia_reglas,
+        urgencia_final=urgencia_final,
+    )
+    caso = (req.caso or texto_original or "").strip()
+    sintomas_texto = ";".join(sintomas)
+
+    return observacion_store.append(
+        caso=caso,
+        sintomas_texto=sintomas_texto,
+        nivel_sistema_ml=urgencia_ml,
+        nivel_referencia=urgencia_reglas,
+        recomendacion_sistema=recomendacion,
+        adequacy=adequacy,
+        intime=intime,
+        outtime=outtime,
+        alarm_event=alarm_event,
+        alarm_unjustified_event=alarm_unjustified_event,
+        override_event=override_event,
+        overall_urgency=urgencia_final,
+        ml_used=ml_used,
+        urgency_source=urgency_source,
+    )
 
 
 def _respuesta_sin_sintomas(mensaje: str):
@@ -386,6 +596,8 @@ def health():
         "ml_enabled": bool(vectorizer and clf),
         "ml_min_sintomas": MIN_SINTOMAS_PARA_ML,
         "model_path": str(MODEL_PATH),
+        "observation_csv": str(OBSERVACIONES_CSV),
+        "observations_total": observacion_store.total_cases,
     }
 
 
@@ -393,57 +605,97 @@ def health():
 def analizar(req: TriageRequest):
     texto_original = req.texto_paciente or ""
     texto = _normalizar(texto_original)
+
+    # Defaults para salida y ficha de observacion
+    all_sintomas: List[str] = []
+    categorias: Dict[str, List[str]] = {}
+    prioridades: Dict[str, int] = {}
+    urgencia = 0
+    urgencia_reglas = 0
+    urgencia_ml = None
+    ml_used = False
+    urgency_source = "none"
+    recomendacion = "No se detectaron sintomas, intente de nuevo."
+
     if not texto:
-        return _respuesta_sin_sintomas("No se detectaron sintomas, intente de nuevo.")
+        ficha = _registrar_ficha_observacion(
+            req=req,
+            texto_original=texto_original,
+            sintomas=all_sintomas,
+            urgencia_ml=urgencia_ml,
+            urgencia_reglas=urgencia_reglas,
+            urgencia_final=urgencia,
+            recomendacion=recomendacion,
+            ml_used=ml_used,
+            urgency_source=urgency_source,
+        )
+        return {
+            "sintomas": [],
+            "categorias": {},
+            "prioridades": {},
+            "overall_urgency": 0,
+            "rule_based_urgency": 0,
+            "recommended_action": recomendacion,
+            "ml_enabled": bool(vectorizer and clf),
+            "ml_predicted_urgency": None,
+            "ml_used": False,
+            "urgency_source": "none",
+            "observation_id": ficha["id"],
+            "observation_csv": str(OBSERVACIONES_CSV),
+        }
 
     sintomas_detectados = extractor.extraer(texto)
-
-    all_sintomas: List[str] = []
     vistos = set()
     for s in sintomas_detectados:
         if s in sintomas_prioridad and s not in vistos:
             vistos.add(s)
             all_sintomas.append(s)
 
-    if not all_sintomas:
-        return _respuesta_sin_sintomas("No se detectaron sintomas, intente de nuevo.")
+    if all_sintomas:
+        for s in all_sintomas:
+            categoria = categorias_map.get(s, "General")
+            categorias.setdefault(categoria, []).append(s)
 
-    categorias: Dict[str, List[str]] = {}
-    for s in all_sintomas:
-        categoria = categorias_map.get(s, "General")
-        categorias.setdefault(categoria, []).append(s)
+        prioridades = {s: sintomas_prioridad.get(s, 1) for s in all_sintomas}
+        urgencia_reglas = max(prioridades.values(), default=1)
 
-    prioridades: Dict[str, int] = {s: sintomas_prioridad.get(s, 1) for s in all_sintomas}
-    urgencia_reglas = max(prioridades.values(), default=1)
+        set_sintomas = set(all_sintomas)
+        for combo in combinaciones_urgencia:
+            if combo["sintomas"].issubset(set_sintomas):
+                urgencia_reglas = max(urgencia_reglas, combo["nivel"])
 
-    set_sintomas = set(all_sintomas)
-    for combo in combinaciones_urgencia:
-        if combo["sintomas"].issubset(set_sintomas):
-            urgencia_reglas = max(urgencia_reglas, combo["nivel"])
+        urgencia = urgencia_reglas
+        urgency_source = "reglas"
 
-    urgencia = urgencia_reglas
-    urgencia_ml = None
-    ml_used = False
-    urgency_source = "reglas"
+        # Politica: ML solo si hay >= MIN_SINTOMAS_PARA_ML sintomas detectados.
+        if vectorizer is not None and clf is not None and len(all_sintomas) >= MIN_SINTOMAS_PARA_ML:
+            try:
+                x_vec = vectorizer.transform([texto])
+                urgencia_ml = int(clf.predict(x_vec)[0])
+                urgencia = max(urgencia_reglas, urgencia_ml)
+                ml_used = True
+                urgency_source = "ml+reglas" if urgencia_ml != urgencia_reglas else "reglas=ml"
+            except Exception as exc:
+                print(f"Advertencia: fallo inferencia ML ({exc}). Se mantienen reglas.")
 
-    # Política: el ML solo se aplica si hay >= MIN_SINTOMAS_PARA_ML síntomas detectados.
-    # Esto evita sobre-escalamiento en casos simples (p.ej. solo "fiebre").
-    if vectorizer is not None and clf is not None and len(all_sintomas) >= MIN_SINTOMAS_PARA_ML:
-        try:
-            x_vec = vectorizer.transform([texto])
-            urgencia_ml = int(clf.predict(x_vec)[0])
-            urgencia = max(urgencia_reglas, urgencia_ml)
-            ml_used = True
-            urgency_source = "ml+reglas" if urgencia_ml != urgencia_reglas else "reglas=ml"
-        except Exception as exc:
-            print(f"Advertencia: fallo inferencia ML ({exc}). Se mantienen reglas.")
+        if urgencia == 3:
+            recomendacion = "Acudir a emergencias inmediatamente."
+        elif urgencia == 2:
+            recomendacion = "Buscar atencion medica en las proximas horas."
+        else:
+            recomendacion = "Reposo y observacion."
 
-    if urgencia == 3:
-        recomendacion = "Acudir a emergencias inmediatamente."
-    elif urgencia == 2:
-        recomendacion = "Buscar atencion medica en las proximas horas."
-    else:
-        recomendacion = "Reposo y observacion."
+    ficha = _registrar_ficha_observacion(
+        req=req,
+        texto_original=texto_original,
+        sintomas=all_sintomas,
+        urgencia_ml=urgencia_ml,
+        urgencia_reglas=urgencia_reglas,
+        urgencia_final=urgencia,
+        recomendacion=recomendacion,
+        ml_used=ml_used,
+        urgency_source=urgency_source,
+    )
 
     return {
         "sintomas": all_sintomas,
@@ -456,6 +708,8 @@ def analizar(req: TriageRequest):
         "ml_predicted_urgency": urgencia_ml,
         "ml_used": ml_used,
         "urgency_source": urgency_source,
+        "observation_id": ficha["id"],
+        "observation_csv": str(OBSERVACIONES_CSV),
     }
 
 
