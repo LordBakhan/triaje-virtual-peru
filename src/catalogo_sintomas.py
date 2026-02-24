@@ -59,7 +59,8 @@ CATALOGO_SINTOMAS = {
     ],
     "dolor de diente": [
         "dolor de diente", "dolor dental", "dolor de muela", "me duele un diente",
-        "me duele la muela", "diente dolorido", "doliendo los dientes"
+        "me duele la muela", "me duele el diente", "duele el diente", "dolor en el diente",
+        "diente dolorido", "diente que duele", "doliendo los dientes"
     ],
     "hormigueo en la cara": [
         "hormigueo en la cara",
@@ -268,7 +269,8 @@ CATALOGO_SINTOMAS = {
     ],
     "dolor muscular": [
         "dolor muscular", "dolor en los musculos", "me duelen los musculos",
-        "musculos adoloridos", "musculos doloridos", "mialgia"
+        "musculos adoloridos", "musculos doloridos", "dolores musculares",
+        "me duele el musculo", "mialgia"
     ],
     "debilidad muscular": [
         "debilidad muscular", "musculos debiles", "falta de fuerza",
@@ -419,6 +421,339 @@ CATALOGO_SINTOMAS = {
         "venas prominentes en pantorrilla", "venas marcadas en la pantorrilla",
         "venas saltadas en la pantorrilla", "venas visibles en pantorrilla",
         "venas abultadas en la pierna", "varices en pantorrilla"
+    ],
+    "dolor de encias": [
+        "dolor de encias", "dolor en las encias", "me duelen las encias",
+        "dolor de la encia", "encias adoloridas", "molestia en las encias"
+    ],
+    "sangrado de encias": [
+        "sangrado de encias", "sangran las encias", "me sangran las encias",
+        "sangrado en la encia", "encia sangrante"
+    ],
+    "encias inflamadas": [
+        "encias inflamadas", "encia inflamada", "encias hinchadas",
+        "inflamacion de encias", "se me inflaman las encias"
+    ],
+    "ulceras bucales": [
+        "ulceras bucales", "llagas en la boca", "aftas", "aftas bucales",
+        "heridas en la boca", "ulceras en la lengua"
+    ],
+    "mal aliento": [
+        "mal aliento", "halitosis", "aliento feo", "aliento fuerte",
+        "me huele mal la boca"
+    ],
+    "boca seca": [
+        "boca seca", "resequedad bucal", "sequedad en la boca",
+        "tengo la boca seca", "se me seca la boca"
+    ],
+    "dolor de mandibula": [
+        "dolor de mandibula", "dolor en la mandibula", "me duele la mandibula",
+        "mandibula adolorida", "dolor al abrir la boca"
+    ],
+    "dolor de lengua": [
+        "dolor de lengua", "me duele la lengua", "lengua adolorida",
+        "molestia en la lengua", "ardor en la lengua"
+    ],
+    "dolor al masticar": [
+        "dolor al masticar", "me duele al masticar", "masticar me duele",
+        "dolor al comer", "molestia al masticar"
+    ],
+    "oido tapado": [
+        "oido tapado", "oidos tapados", "tengo el oido tapado",
+        "sensacion de oido tapado", "oido congestionado"
+    ],
+    "zumbido de oidos": [
+        "zumbido de oidos", "zumbido en el oido", "pitido en el oido",
+        "ruido en el oido", "tinnitus"
+    ],
+    "disminucion de audicion": [
+        "disminucion de audicion", "escucho menos", "oigo menos",
+        "perdida leve de audicion", "audicion baja"
+    ],
+    "picazon de garganta": [
+        "picazon de garganta", "picor de garganta", "comezon de garganta",
+        "garganta con picazon", "me pica la garganta"
+    ],
+    "ronquera": [
+        "ronquera", "voz ronca", "estoy ronco", "estoy ronca",
+        "afonia leve", "voz tomada"
+    ],
+    "carraspeo": [
+        "carraspeo", "carraspeo frecuente", "tengo que aclarar la garganta",
+        "aclaramiento de garganta", "carraspear"
+    ],
+    "picazon de ojos": [
+        "picazon de ojos", "picor de ojos", "comezon en los ojos",
+        "me pican los ojos", "ojos con picazon"
+    ],
+    "ardor de ojos": [
+        "ardor de ojos", "me arden los ojos", "quemazon en los ojos",
+        "ojos ardientes", "ardor ocular"
+    ],
+    "secrecion ocular": [
+        "secrecion ocular", "leganas", "ojo con secrecion",
+        "descarga ocular", "moco en los ojos"
+    ],
+    "parpados hinchados": [
+        "parpados hinchados", "parpado hinchado", "inflamacion de parpados",
+        "parpados inflamados", "hinchazon en los parpados"
+    ],
+    "sensibilidad a la luz": [
+        "sensibilidad a la luz", "fotofobia", "la luz me molesta",
+        "me molestan las luces", "intolerancia a la luz"
+    ],
+    "fatiga visual": [
+        "fatiga visual", "cansancio visual", "vista cansada",
+        "ojos cansados", "me cansa la vista"
+    ],
+    "hinchazon abdominal": [
+        "hinchazon abdominal", "abdomen hinchado", "panza hinchada",
+        "barriga inflamada", "vientre hinchado"
+    ],
+    "distension abdominal": [
+        "distension abdominal", "distension del abdomen", "abdomen distendido",
+        "me siento distendido", "inflamacion abdominal"
+    ],
+    "colicos abdominales": [
+        "colicos abdominales", "colicos", "retortijones",
+        "dolor tipo colico", "espasmos abdominales"
+    ],
+    "reflujo": [
+        "reflujo", "reflujo gastrico", "acido que sube",
+        "regurgitacion", "se me sube la comida"
+    ],
+    "eructos frecuentes": [
+        "eructos frecuentes", "muchos eructos", "eructo mucho",
+        "eructos constantes", "gases por arriba"
+    ],
+    "saciedad temprana": [
+        "saciedad temprana", "me lleno rapido", "me saturo rapido",
+        "lleno con poca comida", "llenura precoz"
+    ],
+    "dolor pelvico": [
+        "dolor pelvico", "dolor en la pelvis", "molestia pelvica",
+        "dolor en la parte baja del vientre", "pelvis adolorida"
+    ],
+    "urgencia urinaria": [
+        "urgencia urinaria", "urgencia de orinar", "ganas urgentes de orinar",
+        "me dan ganas de orinar de golpe", "necesidad urgente de orinar"
+    ],
+    "frecuencia urinaria": [
+        "frecuencia urinaria", "orino seguido", "orino muy frecuente",
+        "voy al bano a cada rato", "miccion frecuente"
+    ],
+    "orina turbia": [
+        "orina turbia", "orina opaca", "orina con aspecto turbio",
+        "pipi turbio", "orina nublada"
+    ],
+    "orina con mal olor": [
+        "orina con mal olor", "orina con olor fuerte", "mal olor de orina",
+        "orina fetida", "pipi con mal olor"
+    ],
+    "picazon vaginal": [
+        "picazon vaginal", "comezon vaginal", "picor vaginal",
+        "me pica la zona vaginal", "prurito vaginal"
+    ],
+    "flujo vaginal anormal": [
+        "flujo vaginal anormal", "flujo vaginal", "secrecion vaginal anormal",
+        "flujo con mal olor", "cambio en el flujo vaginal"
+    ],
+    "dolor menstrual": [
+        "dolor menstrual", "dolor de regla", "dolor de periodo",
+        "colicos menstruales", "dismenorrea"
+    ],
+    "sindrome premenstrual": [
+        "sindrome premenstrual", "sintomas premenstruales", "spm",
+        "malestar premenstrual", "cambios antes de la menstruacion"
+    ],
+    "contractura muscular": [
+        "contractura muscular", "musculo contracturado", "contractura",
+        "nudo muscular", "musculo tieso"
+    ],
+    "dolor de piernas": [
+        "dolor de piernas", "me duelen las piernas", "piernas adoloridas",
+        "dolor en las piernas", "piernas doloridas"
+    ],
+    "dolor de pies": [
+        "dolor de pies", "me duelen los pies", "pies adoloridos",
+        "dolor en los pies", "pies doloridos"
+    ],
+    "dolor de manos": [
+        "dolor de manos", "me duelen las manos", "manos adoloridas",
+        "dolor en las manos", "manos doloridas"
+    ],
+    "dolor de tobillo": [
+        "dolor de tobillo", "dolor en el tobillo", "me duele el tobillo",
+        "tobillo adolorido", "tobillo dolorido"
+    ],
+    "dolor de muneca": [
+        "dolor de muneca", "dolor en la muneca", "me duele la muneca",
+        "muneca adolorida", "muneca dolorida"
+    ],
+    "dolor de codo": [
+        "dolor de codo", "dolor en el codo", "me duele el codo",
+        "codo adolorido", "codo dolorido"
+    ],
+    "rigidez de hombro": [
+        "rigidez de hombro", "hombro rigido", "hombro tieso",
+        "dificultad para mover el hombro", "hombro duro"
+    ],
+    "pesadez en piernas": [
+        "pesadez en piernas", "piernas pesadas", "sensacion de pesadez en las piernas",
+        "piernas cansadas y pesadas", "pesadez de piernas"
+    ],
+    "piernas cansadas": [
+        "piernas cansadas", "cansancio en las piernas", "fatiga en las piernas",
+        "piernas fatigadas", "piernas sin fuerza"
+    ],
+    "mareo al levantarse": [
+        "mareo al levantarse", "me mareo al ponerme de pie", "mareo al pararme",
+        "aturdimiento al levantarme", "mareo postural"
+    ],
+    "sensibilidad al ruido": [
+        "sensibilidad al ruido", "me molesta el ruido", "intolerancia al ruido",
+        "sonidos me molestan", "hipersensibilidad al ruido"
+    ],
+    "niebla mental": [
+        "niebla mental", "mente nublada", "cabeza nublada",
+        "pensamiento lento", "me cuesta pensar claro"
+    ],
+    "falta de memoria leve": [
+        "falta de memoria leve", "olvidos frecuentes", "se me olvidan las cosas",
+        "memoria baja", "dificultad para recordar"
+    ],
+    "estres": [
+        "estres", "estresado", "estresada", "tension emocional",
+        "mucho estres", "sobrecarga mental"
+    ],
+    "animo bajo": [
+        "animo bajo", "desanimo", "me siento decaido",
+        "me siento decaida", "tristeza leve"
+    ],
+    "sueno no reparador": [
+        "sueno no reparador", "duermo pero no descanso", "descanso insuficiente",
+        "me levanto cansado", "me levanto cansada"
+    ],
+    "despertares nocturnos": [
+        "despertares nocturnos", "me despierto en la noche", "despierto varias veces",
+        "interrupciones del sueno", "sueño fragmentado"
+    ],
+    "piel seca": [
+        "piel seca", "resequedad en la piel", "piel reseca",
+        "piel tirante", "falta de hidratacion en la piel"
+    ],
+    "descamacion de la piel": [
+        "descamacion de la piel", "piel descamada", "se me pela la piel",
+        "escamas en la piel", "pelado de piel"
+    ],
+    "urticaria": [
+        "urticaria", "habones", "ronchas que pican",
+        "erupcion urticarial", "salida de ronchas"
+    ],
+    "acne": [
+        "acne", "granitos", "espinillas", "barros",
+        "brotes de acne", "piel acneica"
+    ],
+    "picazon en el cuero cabelludo": [
+        "picazon en el cuero cabelludo", "comezon en el cuero cabelludo",
+        "picor en el cuero cabelludo", "me pica la cabeza", "cuero cabelludo con picazon"
+    ],
+    "caspa": [
+        "caspa", "descamacion del cuero cabelludo", "escamas en el cabello",
+        "hombros con caspa", "caspa abundante"
+    ],
+    "caida de cabello": [
+        "caida de cabello", "se me cae el cabello", "perdida de cabello",
+        "caida del pelo", "pierdo mucho pelo"
+    ],
+    "dolor de talon": [
+        "dolor de talon", "dolor en el talon", "me duele el talon",
+        "talon adolorido", "talon dolorido"
+    ],
+    "dolor de pantorrilla": [
+        "dolor de pantorrilla", "dolor en la pantorrilla", "me duele la pantorrilla",
+        "pantorrilla adolorida", "pantorrilla dolorida"
+    ],
+    "dolor de antebrazo": [
+        "dolor de antebrazo", "dolor en el antebrazo", "me duele el antebrazo",
+        "antebrazo adolorido", "antebrazo dolorido"
+    ],
+    "dolor de dedos": [
+        "dolor de dedos", "dolor en los dedos", "me duelen los dedos",
+        "dedos adoloridos", "dedos doloridos"
+    ],
+    "dolor en la planta del pie": [
+        "dolor en la planta del pie", "dolor en la planta de los pies",
+        "me duele la planta del pie", "planta del pie adolorida",
+        "dolor plantar"
+    ],
+    "calambres nocturnos": [
+        "calambres nocturnos", "calambres en la noche", "me dan calambres de noche",
+        "espasmos nocturnos", "calambres al dormir"
+    ],
+    "boca amarga": [
+        "boca amarga", "sabor amargo en la boca", "amargor en la boca",
+        "siento la boca amarga", "me sabe amarga la boca"
+    ],
+    "sabor metalico": [
+        "sabor metalico", "sabor a metal", "sabor raro en la boca",
+        "sabor ferrico", "gusto metalico"
+    ],
+    "dolor en la boca del estomago": [
+        "dolor en la boca del estomago", "dolor en el epigastrio", "ardor en la boca del estomago",
+        "me duele la boca del estomago", "molestia epigastrica"
+    ],
+    "hipo frecuente": [
+        "hipo frecuente", "tengo hipo seguido", "hipo constante",
+        "me da hipo a cada rato", "hipo repetitivo"
+    ],
+    "sensacion de llenura": [
+        "sensacion de llenura", "me siento lleno", "llenura abdominal",
+        "sensacion de estar lleno", "plenitud abdominal"
+    ],
+    "evacuacion incompleta": [
+        "evacuacion incompleta", "siento que no evacuo completo", "no termino de evacuar",
+        "sensacion de evacuacion incompleta", "evacuacion parcial"
+    ],
+    "nicturia": [
+        "nicturia", "me levanto a orinar en la noche", "orino de noche",
+        "miccion nocturna", "voy al bano por la noche"
+    ],
+    "dolor suprapubico": [
+        "dolor suprapubico", "dolor sobre el pubis", "dolor en el bajo vientre",
+        "me duele encima de la vejiga", "molestia suprapubica"
+    ],
+    "nariz seca": [
+        "nariz seca", "resequedad nasal", "nariz resecada",
+        "se me seca la nariz", "sequedad en la nariz"
+    ],
+    "sequedad de labios": [
+        "sequedad de labios", "labios secos", "resequedad en los labios",
+        "labios resecos", "siento secos los labios"
+    ],
+    "labios agrietados": [
+        "labios agrietados", "labios partidos", "se me parten los labios",
+        "grietas en los labios", "labios cuarteados"
+    ],
+    "tic en el ojo": [
+        "tic en el ojo", "temblor en el parpado", "parpado que tiembla",
+        "espasmo en el parpado", "me tiembla el ojo"
+    ],
+    "ojo lloroso": [
+        "ojo lloroso", "ojos llorosos", "ojo que lagrimea",
+        "lagrimeo en un ojo", "lloro del ojo"
+    ],
+    "sueno ligero": [
+        "sueno ligero", "duermo ligero", "sueño liviano",
+        "me despierto con cualquier ruido", "sueño superficial"
+    ],
+    "pesadillas frecuentes": [
+        "pesadillas frecuentes", "tengo pesadillas", "malos suenos frecuentes",
+        "pesadillas seguidas", "suenos desagradables recurrentes"
+    ],
+    "somnolencia diurna": [
+        "somnolencia diurna", "me da sueno de dia", "sueño durante el dia",
+        "me siento adormilado en el dia", "cansancio con sueno en el dia"
     ],
 }
 
