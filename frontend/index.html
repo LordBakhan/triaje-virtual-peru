@@ -356,7 +356,7 @@
       resultadoEl.innerHTML = `<p class="row"><strong>Analizando...</strong></p>`;
 
       try {
-        const intime = new Date().toISOString();
+        const intime = Date.now();
         const resp = await fetch(ANALIZAR_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
