@@ -1,11 +1,11 @@
 import argparse
 import csv
 import io
+import json
 import random
 import time
+from urllib import error, request
 from pathlib import Path
-
-import requests
 
 from catalogo_sintomas import CATALOGO_SINTOMAS
 
@@ -50,22 +50,37 @@ def _construir_caso(rng: random.Random) -> str:
     return texto
 
 
-def _post_analizar(session: requests.Session, api_base: str, texto: str, timeout: int):
-    intime = int(time.time() * 1000)
+def _http_post_json(url: str, payload: dict, timeout: int):
+    data = json.dumps(payload).encode("utf-8")
+    req = request.Request(
+        url,
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with request.urlopen(req, timeout=timeout) as resp:
+        body = resp.read().decode("utf-8")
+        return json.loads(body)
+
+
+def _http_get_text(url: str, timeout: int) -> str:
+    req = request.Request(url, method="GET")
+    with request.urlopen(req, timeout=timeout) as resp:
+        return resp.read().decode("utf-8")
+
+
+def _post_analizar(api_base: str, texto: str, timeout: int):
+    intime = time.time() / 60
     payload = {
         "texto_paciente": texto,
         "caso": texto,
         "intime": intime,
     }
-    resp = session.post(f"{api_base}/api/analizar", json=payload, timeout=timeout)
-    resp.raise_for_status()
-    return resp.json()
+    return _http_post_json(f"{api_base}/api/analizar", payload, timeout)
 
 
-def _descargar_csv(session: requests.Session, api_base: str, timeout: int) -> str:
-    resp = session.get(f"{api_base}/api/observaciones/csv", timeout=timeout)
-    resp.raise_for_status()
-    return resp.text
+def _descargar_csv(api_base: str, timeout: int) -> str:
+    return _http_get_text(f"{api_base}/api/observaciones/csv", timeout)
 
 
 def _guardar_ultimos_n(csv_text: str, n: int, output_path: Path):
@@ -101,17 +116,22 @@ def main():
 
     ok = 0
     errores = 0
-    with requests.Session() as session:
-        for i in range(args.n):
-            texto = _construir_caso(rng)
-            try:
-                _post_analizar(session, api_base, texto, args.timeout)
-                ok += 1
-            except Exception as exc:
-                errores += 1
-                print(f"[{i + 1}/{args.n}] error enviando caso: {exc}")
+    for i in range(args.n):
+        texto = _construir_caso(rng)
+        try:
+            _post_analizar(api_base, texto, args.timeout)
+            ok += 1
+        except error.HTTPError as exc:
+            errores += 1
+            print(f"[{i + 1}/{args.n}] HTTP {exc.code}: {exc.reason}")
+        except error.URLError as exc:
+            errores += 1
+            print(f"[{i + 1}/{args.n}] error de red: {exc.reason}")
+        except Exception as exc:
+            errores += 1
+            print(f"[{i + 1}/{args.n}] error enviando caso: {exc}")
 
-        csv_text = _descargar_csv(session, api_base, args.timeout)
+    csv_text = _descargar_csv(api_base, args.timeout)
 
     total_guardados, columnas = _guardar_ultimos_n(csv_text, ok, output_path)
 
