@@ -9,7 +9,20 @@ init(autoreset=True)
 # CONFIG
 # ==============================
 
-DATASET = "dataset_triaje_400_virtual_ajustado.csv"
+DATASET = "dataset_triaje_800_virtual_ajustado.csv"
+
+REQUIRED_COLUMNS = [
+    "nivel_sistema",
+    "nivel_referencia",
+    "recomendacion_sistema",
+    "recomendacion_referencia",
+    "adequacy_score",
+    "intime",
+    "outtime",
+    "wait_base_min",
+    "alarm",
+    "override",
+]
 
 
 # ==============================
@@ -31,6 +44,23 @@ def dato(nombre, valor, color=Fore.WHITE):
     print(f"{color}{nombre:<60}: {valor}")
 
 
+def calcular_tiempo_atencion_min(df):
+    intime = pd.to_numeric(df["intime"], errors="coerce")
+    outtime = pd.to_numeric(df["outtime"], errors="coerce")
+    delta = (outtime - intime).fillna(0)
+    mediana = float(delta.median()) if len(delta) else 0.0
+
+    # Auto-deteccion de unidad:
+    # ms -> divide entre 60000
+    # s  -> divide entre 60
+    # min -> directo
+    if mediana > 10000:
+        return delta / 60000.0
+    if mediana > 300:
+        return delta / 60.0
+    return delta
+
+
 # ==============================
 # MAIN
 # ==============================
@@ -42,13 +72,24 @@ def main():
     # ==============================
 
     df = pd.read_csv(DATASET)
+    faltantes = [c for c in REQUIRED_COLUMNS if c not in df.columns]
+    if faltantes:
+        raise ValueError(f"El dataset no contiene las columnas requeridas: {faltantes}")
 
     total = len(df)
+
+    # Conversion numerica defensiva
+    df["nivel_sistema"] = pd.to_numeric(df["nivel_sistema"], errors="coerce").fillna(0).astype(int)
+    df["nivel_referencia"] = pd.to_numeric(df["nivel_referencia"], errors="coerce").fillna(0).astype(int)
+    df["adequacy_score"] = pd.to_numeric(df["adequacy_score"], errors="coerce").fillna(0.0)
+    df["wait_base_min"] = pd.to_numeric(df["wait_base_min"], errors="coerce").fillna(0.0)
+    df["alarm"] = pd.to_numeric(df["alarm"], errors="coerce").fillna(0).astype(int)
+    df["override"] = pd.to_numeric(df["override"], errors="coerce").fillna(0).astype(int)
 
     # Variables derivadas
     df["acuity_match"] = (df["nivel_sistema"] == df["nivel_referencia"]).astype(int)
     df["disp_match"] = (df["recomendacion_sistema"] == df["recomendacion_referencia"]).astype(int)
-    df["tiempo_atencion"] = df["outtime"] - df["intime"]
+    df["tiempo_atencion"] = calcular_tiempo_atencion_min(df)
 
 
     # ==============================

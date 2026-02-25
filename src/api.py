@@ -339,12 +339,14 @@ OBS_FIELDS = [
     "id",
     "caso",
     "sintomas_texto",
-    "nivel_sistema_ml",
+    "nivel_sistema",
     "nivel_referencia",
     "recomendacion_sistema",
-    "adequacy",
+    "recomendacion_referencia",
+    "adequacy_score",
     "intime",
     "outtime",
+    "wait_base_min",
     "alarm",
     "override",
 ]
@@ -359,6 +361,7 @@ class _ObservacionStore:
         self.total_alarmas = 0
         self.total_alarmas_injustificadas = 0
         self.total_overrides = 0
+        self._ensure_schema()
         self._bootstrap()
 
     @staticmethod
@@ -381,30 +384,37 @@ class _ObservacionStore:
             return None
 
     @staticmethod
-    def _urgencia_desde_recomendacion(texto: str) -> int:
-        t = _normalizar(texto or "")
-        if "emergencias" in t:
-            return 3
-        if "proximas horas" in t:
-            return 2
-        if "reposo" in t or "observacion" in t:
-            return 1
-        if "no se detectaron sintomas" in t:
-            return 0
-        return 0
+    def _recomendacion_por_nivel(nivel: int) -> str:
+        if nivel == 3:
+            return "Acudir a emergencias inmediatamente."
+        if nivel == 2:
+            return "Buscar atencion medica en las proximas horas."
+        if nivel == 1:
+            return "Reposo y observacion."
+        return "No se detectaron sintomas, intente de nuevo."
+
+    @staticmethod
+    def _wait_base_min_por_nivel(nivel_referencia: int) -> float:
+        # Base presencial inventada para comparacion de tiempos.
+        # Menor urgencia suele esperar mas en triaje presencial.
+        tabla = {
+            0: 0.0,
+            1: 58.0,
+            2: 34.0,
+            3: 16.0,
+        }
+        return tabla.get(int(nivel_referencia), 34.0)
 
     @classmethod
     def _eventos_desde_fila(cls, row):
-        ml = cls._to_optional_int(row.get("nivel_sistema_ml"))
-        ref = cls._to_int(row.get("nivel_referencia"))
-        final_urg = cls._urgencia_desde_recomendacion(row.get("recomendacion_sistema", ""))
-
-        alarm_event = int(ml is not None and ml != ref)
-        alarm_unjustified_event = int(
-            alarm_event and ml is not None and ml > ref and ref <= 2
+        nivel_sistema = cls._to_optional_int(row.get("nivel_sistema"))
+        nivel_referencia = cls._to_int(row.get("nivel_referencia"))
+        alarm_event = int(
+            nivel_sistema is not None and nivel_sistema != nivel_referencia
         )
-        override_event = int(
-            ml is not None and ml < ref and final_urg == ref
+        override_event = 1 if cls._to_int(row.get("override")) > 0 else 0
+        alarm_unjustified_event = 1 if cls._to_int(row.get("alarm")) > 0 else int(
+            alarm_event and nivel_sistema is not None and nivel_sistema > nivel_referencia and nivel_referencia <= 2
         )
         return alarm_event, alarm_unjustified_event, override_event
 
@@ -459,10 +469,10 @@ class _ObservacionStore:
         *,
         caso: str,
         sintomas_texto: str,
-        nivel_sistema_ml,
+        nivel_sistema,
         nivel_referencia: int,
         recomendacion_sistema: str,
-        adequacy: float,
+        adequacy_score: float,
         intime: int,
         outtime: int,
         urgencia_final: int,
@@ -471,13 +481,13 @@ class _ObservacionStore:
             self._ensure_schema()
 
             alarm_event = int(
-                nivel_sistema_ml is not None and int(nivel_sistema_ml) != int(nivel_referencia)
+                nivel_sistema is not None and int(nivel_sistema) != int(nivel_referencia)
             )
             alarm_unjustified_event = int(
-                alarm_event and nivel_sistema_ml is not None and int(nivel_sistema_ml) > int(nivel_referencia) and int(nivel_referencia) <= 2
+                alarm_event and nivel_sistema is not None and int(nivel_sistema) > int(nivel_referencia) and int(nivel_referencia) <= 2
             )
             override_event = int(
-                nivel_sistema_ml is not None and int(nivel_sistema_ml) < int(nivel_referencia) and int(urgencia_final) == int(nivel_referencia)
+                nivel_sistema is not None and int(nivel_sistema) < int(nivel_referencia) and int(urgencia_final) == int(nivel_referencia)
             )
 
             self.total_cases += 1
@@ -486,27 +496,20 @@ class _ObservacionStore:
             self.total_alarmas_injustificadas += alarm_unjustified_event
             self.total_overrides += override_event
 
-            alarm_ratio = (
-                self.total_alarmas_injustificadas / self.total_alarmas
-                if self.total_alarmas > 0
-                else 0.0
-            )
-            override_ratio = (
-                self.total_overrides / self.total_cases if self.total_cases > 0 else 0.0
-            )
-
             row = {
                 "id": self.last_id,
                 "caso": caso,
                 "sintomas_texto": sintomas_texto,
-                "nivel_sistema_ml": "" if nivel_sistema_ml is None else int(nivel_sistema_ml),
+                "nivel_sistema": "" if nivel_sistema is None else int(nivel_sistema),
                 "nivel_referencia": int(nivel_referencia),
                 "recomendacion_sistema": recomendacion_sistema,
-                "adequacy": f"{float(adequacy):.2f}",
+                "recomendacion_referencia": self._recomendacion_por_nivel(int(nivel_referencia)),
+                "adequacy_score": f"{float(adequacy_score):.2f}",
                 "intime": intime,
                 "outtime": outtime,
-                "alarm": f"{alarm_ratio:.4f}",
-                "override": f"{override_ratio:.4f}",
+                "wait_base_min": f"{self._wait_base_min_por_nivel(int(nivel_referencia)):.2f}",
+                "alarm": alarm_unjustified_event,
+                "override": override_event,
             }
 
             self.path.parent.mkdir(parents=True, exist_ok=True)
@@ -621,14 +624,15 @@ def _registrar_ficha_observacion(
     adequacy = _clamp_adequacy(req.adequacy, urgencia_final, urgencia_reglas, bool(sintomas))
     caso = (req.caso or texto_original or "").strip()
     sintomas_texto = ";".join(sintomas)
+    nivel_sistema = urgencia_ml if urgencia_ml is not None else urgencia_final
 
     return observacion_store.append(
         caso=caso,
         sintomas_texto=sintomas_texto,
-        nivel_sistema_ml=urgencia_ml,
+        nivel_sistema=nivel_sistema,
         nivel_referencia=urgencia_reglas,
         recomendacion_sistema=recomendacion,
-        adequacy=adequacy,
+        adequacy_score=adequacy,
         intime=intime,
         outtime=outtime,
         urgencia_final=urgencia_final,
@@ -790,7 +794,12 @@ def observaciones_estado():
         "csv_path": str(OBSERVACIONES_CSV),
         "exists": OBSERVACIONES_CSV.exists(),
         "observations_total": observacion_store.total_cases,
-        "alarm_ratio": (
+        "alarm_rate": (
+            observacion_store.total_alarmas / observacion_store.total_cases
+            if observacion_store.total_cases > 0
+            else 0.0
+        ),
+        "alarm_unjustified_ratio": (
             observacion_store.total_alarmas_injustificadas / observacion_store.total_alarmas
             if observacion_store.total_alarmas > 0
             else 0.0
