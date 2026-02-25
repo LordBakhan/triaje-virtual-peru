@@ -558,8 +558,8 @@ class TriageRequest(BaseModel):
     adequacy: Optional[float] = None
 
 
-def _ahora_ms():
-    return int(datetime.now(timezone.utc).timestamp() * 1000)
+def _ahora_min():
+    return datetime.now(timezone.utc).timestamp() / 60
 
 
 def _parse_epoch_ms(value):
@@ -619,8 +619,8 @@ def _registrar_ficha_observacion(
     urgencia_final: int,
     recomendacion: str,
 ):
-    intime = _parse_epoch_ms(req.intime)
-    outtime = _ahora_ms()
+    intime = float(req.intime) if req.intime is not None else _ahora_min()
+    outtime = _ahora_min()
     adequacy = _clamp_adequacy(req.adequacy, urgencia_final, urgencia_reglas, bool(sintomas))
     caso = (req.caso or texto_original or "").strip()
     sintomas_texto = ";".join(sintomas)

@@ -169,7 +169,7 @@ CATALOGO_SINTOMAS = {
     ],
     "ansiedad": [
         "ansiedad", "nerviosismo", "ansiedad intensa", "me siento ansioso",
-        "tengo ansiedad", "estoy nervioso"
+        "tengo ansiedad", "estoy nervioso", "estoy ansioso", "estoy ansiosa"
     ],
     "congestión nasal": [
         "congestión nasal", "nariz tapada", "congestion nasal", "nariz congestionada",
@@ -306,7 +306,8 @@ CATALOGO_SINTOMAS = {
     ],
     "dificultad para concentrarse": [
         "dificultad para concentrarse", "me cuesta concentrarme",
-        "falta de concentracion", "problemas para concentrarme", "mente nublada"
+        "falta de concentracion", "problemas para concentrarme", "mente nublada",
+        "dificultad para concentrarme"
     ],
     "bochornos": [
         "bochornos", "bochorno", "sofocos", "calor subito",
@@ -369,7 +370,7 @@ CATALOGO_SINTOMAS = {
     "dolor detrás de los ojos": [
         "dolor detrás de los ojos", "dolor detras de los ojos",
         "dolor detrás del ojo", "dolor detras del ojo",
-        "me duelen los ojos por detrás", "presion detras de los ojos",
+        "me duelen los ojos por detrás", "me duele detras de los ojos", "presion detras de los ojos",
         "presión detrás de los ojos", "dolor ocular profundo"
     ],
     "presion sinusal": [
@@ -432,11 +433,12 @@ CATALOGO_SINTOMAS = {
     ],
     "encias inflamadas": [
         "encias inflamadas", "encia inflamada", "encias hinchadas",
-        "inflamacion de encias", "se me inflaman las encias"
+        "inflamacion de encias", "se me inflaman las encias", "encias estan inflamadas",
+        "tengo las encias inflamadas"
     ],
     "ulceras bucales": [
         "ulceras bucales", "llagas en la boca", "aftas", "aftas bucales",
-        "heridas en la boca", "ulceras en la lengua"
+        "heridas en la boca", "ulceras en la lengua", "ulcera en la boca", "ulcera bucal"
     ],
     "mal aliento": [
         "mal aliento", "halitosis", "aliento feo", "aliento fuerte",
@@ -500,7 +502,8 @@ CATALOGO_SINTOMAS = {
     ],
     "sensibilidad a la luz": [
         "sensibilidad a la luz", "fotofobia", "la luz me molesta",
-        "me molestan las luces", "intolerancia a la luz"
+        "me molestan las luces", "intolerancia a la luz", "me molesta la luz",
+        "la luz me incomoda"
     ],
     "fatiga visual": [
         "fatiga visual", "cansancio visual", "vista cansada",
@@ -540,15 +543,16 @@ CATALOGO_SINTOMAS = {
     ],
     "frecuencia urinaria": [
         "frecuencia urinaria", "orino seguido", "orino muy frecuente",
-        "voy al bano a cada rato", "miccion frecuente"
+        "voy al bano a cada rato", "miccion frecuente", "orino muy seguido"
     ],
     "orina turbia": [
         "orina turbia", "orina opaca", "orina con aspecto turbio",
-        "pipi turbio", "orina nublada"
+        "pipi turbio", "orina nublada", "orino turbio", "la orina sale turbia"
     ],
     "orina con mal olor": [
         "orina con mal olor", "orina con olor fuerte", "mal olor de orina",
-        "orina fetida", "pipi con mal olor"
+        "orina fetida", "pipi con mal olor", "orino con mal olor",
+        "mi orina huele fuerte"
     ],
     "picazon vaginal": [
         "picazon vaginal", "comezon vaginal", "picor vaginal",
@@ -608,7 +612,8 @@ CATALOGO_SINTOMAS = {
     ],
     "mareo al levantarse": [
         "mareo al levantarse", "me mareo al ponerme de pie", "mareo al pararme",
-        "aturdimiento al levantarme", "mareo postural"
+        "aturdimiento al levantarme", "mareo postural", "me siento mareado al levantarme",
+        "me siento mareada al levantarme"
     ],
     "sensibilidad al ruido": [
         "sensibilidad al ruido", "me molesta el ruido", "intolerancia al ruido",
@@ -656,7 +661,8 @@ CATALOGO_SINTOMAS = {
     ],
     "picazon en el cuero cabelludo": [
         "picazon en el cuero cabelludo", "comezon en el cuero cabelludo",
-        "picor en el cuero cabelludo", "me pica la cabeza", "cuero cabelludo con picazon"
+        "picor en el cuero cabelludo", "me pica la cabeza", "cuero cabelludo con picazon",
+        "me pica el cuero cabelludo"
     ],
     "caspa": [
         "caspa", "descamacion del cuero cabelludo", "escamas en el cabello",

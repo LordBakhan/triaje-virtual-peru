@@ -9,7 +9,7 @@ init(autoreset=True)
 # CONFIG
 # ==============================
 
-DATASET = "dataset_triaje_800_virtual_ajustado.csv"
+DATASET = "datasetfinal.csv"
 
 REQUIRED_COLUMNS = [
     "nivel_sistema",

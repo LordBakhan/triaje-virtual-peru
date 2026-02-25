@@ -1,0 +1,55 @@
+id,texto,esperados,urgencia_reglas
+1,"Tengo fiebre","fiebre",1
+2,"Me duele la muela","dolor de diente",2
+3,"Duele el diente y las encias estan inflamadas","dolor de diente;encias inflamadas",2
+4,"Tengo dolor de pecho y falta de aire","dolor de pecho;falta de aire",3
+5,"Siento presion en el pecho y me cuesta respirar","presión en el pecho;dificultad para respirar",3
+6,"Estoy con tos persistente, fiebre y mareos","tos persistente;fiebre;mareos",3
+7,"Solo tengo congestion nasal y estornudos","congestión nasal;estornudos",1
+8,"Tengo dolor lumbar y ardor al orinar","dolor lumbar;ardor al orinar",3
+9,"Me dan palpitaciones y me falta el aire","palpitaciones;falta de aire",3
+10,"Llevo dias con dolor de garganta y tos seca","dolor de garganta;tos seca",2
+11,"Me duele el talon","dolor de talon",2
+12,"Tengo calambres nocturnos y piernas cansadas","calambres nocturnos;piernas cansadas",2
+13,"Siento boca amarga y sabor metalico desde ayer","boca amarga;sabor metalico",1
+14,"Me da hipo frecuente y sensacion de llenura","hipo frecuente;sensacion de llenura",1
+15,"Orino muy seguido, mi orina huele fuerte y la orina sale turbia","frecuencia urinaria;orina con mal olor;orina turbia",2
+16,"Me levanto a orinar en la noche","nicturia",2
+17,"Tengo picazon vaginal y flujo con mal olor","picazon vaginal;flujo vaginal anormal",2
+18,"Dolor de regla con colicos menstruales","dolor menstrual",2
+19,"Me pica la garganta y tengo carraspeo","picazon de garganta;carraspeo",1
+20,"Estoy ronca y con voz tomada","ronquera",1
+21,"Siento zumbido de oidos y oido tapado","zumbido de oidos;oido tapado",2
+22,"Escucho menos de un oido","disminucion de audicion",2
+23,"Me arden los ojos y me molesta la luz","ardor de ojos;sensibilidad a la luz",2
+24,"Tengo parpados hinchados y secrecion ocular","parpados hinchados;secrecion ocular",1
+25,"Me duele la planta del pie y me duele el tobillo","dolor en la planta del pie;dolor de tobillo",2
+26,"Dolor de antebrazo y dedos adoloridos","dolor de antebrazo;dolor de dedos",2
+27,"Siento niebla mental, estres y sueno no reparador","niebla mental;estres;sueno no reparador",1
+28,"Tengo pesadillas frecuentes y sueno ligero","pesadillas frecuentes;sueno ligero",1
+29,"Estoy con somnolencia diurna y fatiga","somnolencia diurna;fatiga",1
+30,"Tengo urticaria y picazon en la piel","urticaria;picazón",2
+31,"Se me cae el cabello y tengo caspa","caida de cabello;caspa",1
+32,"Tengo piel seca y labios agrietados","piel seca;labios agrietados",2
+33,"Me pica el cuero cabelludo y tengo granitos","picazon en el cuero cabelludo;acne",1
+34,"Tengo reflujo, eructos frecuentes y dolor en la boca del estomago","reflujo;eructos frecuentes;dolor en la boca del estomago",2
+35,"Desde hace tres dias siento gripe con congestion nasal, estornudos, dolor de garganta, algo de fiebre y cansancio general, ademas me cuesta dormir por la noche","gripe;congestión nasal;estornudos;dolor de garganta;fiebre;fatiga;insomnio",1
+36,"Llevo una semana con dolor muscular en piernas y espalda, calambres nocturnos y pesadez en piernas; por las tardes me siento mareado al levantarme","dolor muscular;calambres nocturnos;pesadez en piernas;mareo al levantarse",2
+37,"Desde ayer tengo fiebre, tos seca y dificultad para respirar, con flema en la noche","fiebre;tos seca;dificultad para respirar;flema",3
+38,"Me duele el pecho, siento presion en el pecho y palpitaciones cuando camino","dolor de pecho;presión en el pecho;palpitaciones",3
+39,"Tengo ardor al orinar, dolor lumbar y fatiga desde hace dos dias","ardor al orinar;dolor lumbar;fatiga",3
+40,"Hola buenas tardes","",0
+41,"Tengo diarrea, nauseas y dolor de estomago","diarrea;náuseas;dolor de estómago",2
+42,"Estoy ansioso, irritable y con dificultad para concentrarme","ansiedad;irritabilidad;dificultad para concentrarse",1
+43,"Veo borroso y me duele detras de los ojos","visión borrosa;dolor detrás de los ojos",2
+44,"Tengo urgencia de orinar y dolor sobre el pubis","urgencia urinaria;dolor suprapubico",2
+45,"Me sangran las encias al cepillarme y tengo mal aliento","sangrado de encias;mal aliento",2
+46,"No puedo respirar bien, tengo sibilancias y falta de aire","sibilancias;falta de aire",3
+47,"Tengo dolor de cuello, rigidez de hombro, dolor de codo y dolor de muneca en la mano derecha","dolor de cuello;rigidez de hombro;dolor de codo;dolor de muneca",2
+48,"Ultimamente tengo unas quebradizas, frio en manos y pies y caida de cabello","uñas quebradizas;frio en manos y pies;caida de cabello",1
+49,"Tengo nariz seca, sequedad de labios y dolor de garganta leve","nariz seca;sequedad de labios;dolor de garganta",1
+50,"Tengo hinchazon de piernas y venas marcadas en la pantorrilla","hinchazon de piernas;venas prominentes en pantorrilla",2
+51,"Siento evacuacion incompleta y dolor al defecar","evacuacion incompleta;dolor al defecar",2
+52,"Estoy con moqueo, lagrimeo y ojos rojos desde ayer","moqueo;lagrimeo;ojos rojos",1
+53,"Tengo dolor en las encias, ulcera en la boca y me duele al masticar","dolor de encias;ulceras bucales;dolor al masticar",2
+54,"Presento oido tapado, ronquera, picazon de garganta y tos leve","oido tapado;ronquera;picazon de garganta;tos",2

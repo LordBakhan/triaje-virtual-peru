@@ -1,0 +1,11 @@
+id,caso,sintomas_texto,nivel_sistema,nivel_referencia,recomendacion_sistema,recomendacion_referencia,adequacy_score,intime,outtime,wait_base_min,alarm,override
+238,Tengo estomago dolorido.,dolor de estómago,1,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050552790,1772050554653,34.00,0,1
+239,Tengo me siento decaida.,animo bajo,1,1,Reposo y observacion.,Reposo y observacion.,5.00,1772050553110,1772050554896,58.00,0,0
+240,Tengo dolor en la muneca.,dolor de muneca,1,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050553338,1772050555140,34.00,0,1
+241,Tengo espasmo en el parpado y desanimo desde ayer.,animo bajo;tic en el ojo,1,1,Reposo y observacion.,Reposo y observacion.,5.00,1772050553584,1772050555388,58.00,0,0
+242,Tengo fiebres y vista nublada desde ayer.,fiebre;visión borrosa,1,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050553832,1772050555629,34.00,0,1
+243,Tengo hinchazon de piernas.,hinchazon de piernas,1,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050554074,1772050555846,34.00,0,1
+244,"Hola doctor, desde hace dos dias presento heridas en la boca, tambien dolor en encias. Quisiera una orientacion inicial.",dolor de encias;ulceras bucales,2,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050554297,1772050556096,34.00,0,0
+245,Tengo estornudos y masticar me duele desde ayer.,estornudos;dolor al masticar,1,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050554541,1772050556310,34.00,0,1
+246,"Hola doctor, desde hace dos dias presento tengo hipo seguido, tambien mal aliento y ademas caspa. Quisiera una orientacion inicial.",mal aliento;caspa;hipo frecuente,1,1,Reposo y observacion.,Reposo y observacion.,5.00,1772050554760,1772050556548,58.00,0,0
+247,Tengo dificultad para caminar.,dificultad para caminar,3,2,Buscar atencion medica en las proximas horas.,Buscar atencion medica en las proximas horas.,5.00,1772050555005,1772050556768,34.00,1,0
